@@ -1,18 +1,18 @@
 //
-//  AppDelegate.m
+//  TYAppDelegate.m
 //  TYDemos
 //
 //  Created by 田宇 on 2019/6/6.
 //  Copyright © 2019 Sheldon. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "TYAppDelegate.h"
 
-@interface AppDelegate ()
+@interface TYAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation TYAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {

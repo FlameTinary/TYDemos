@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		081BFCEC22A8C5FB00F7A3C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 081BFCEB22A8C5FB00F7A3C6 /* AppDelegate.m */; };
-		081BFCEF22A8C5FB00F7A3C6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 081BFCEE22A8C5FB00F7A3C6 /* ViewController.m */; };
+		081BFCEC22A8C5FB00F7A3C6 /* TYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 081BFCEB22A8C5FB00F7A3C6 /* TYAppDelegate.m */; };
+		081BFCEF22A8C5FB00F7A3C6 /* TYStartPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 081BFCEE22A8C5FB00F7A3C6 /* TYStartPageController.m */; };
 		081BFCF222A8C5FB00F7A3C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 081BFCF022A8C5FB00F7A3C6 /* Main.storyboard */; };
 		081BFCF422A8C5FD00F7A3C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 081BFCF322A8C5FD00F7A3C6 /* Assets.xcassets */; };
 		081BFCF722A8C5FD00F7A3C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 081BFCF522A8C5FD00F7A3C6 /* LaunchScreen.storyboard */; };
@@ -17,10 +17,10 @@
 
 /* Begin PBXFileReference section */
 		081BFCE722A8C5FB00F7A3C6 /* TYDemos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TYDemos.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		081BFCEA22A8C5FB00F7A3C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		081BFCEB22A8C5FB00F7A3C6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		081BFCED22A8C5FB00F7A3C6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		081BFCEE22A8C5FB00F7A3C6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		081BFCEA22A8C5FB00F7A3C6 /* TYAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYAppDelegate.h; sourceTree = "<group>"; };
+		081BFCEB22A8C5FB00F7A3C6 /* TYAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYAppDelegate.m; sourceTree = "<group>"; };
+		081BFCED22A8C5FB00F7A3C6 /* TYStartPageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYStartPageController.h; sourceTree = "<group>"; };
+		081BFCEE22A8C5FB00F7A3C6 /* TYStartPageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYStartPageController.m; sourceTree = "<group>"; };
 		081BFCF122A8C5FB00F7A3C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		081BFCF322A8C5FD00F7A3C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		081BFCF622A8C5FD00F7A3C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,10 +58,10 @@
 		081BFCE922A8C5FB00F7A3C6 /* TYDemos */ = {
 			isa = PBXGroup;
 			children = (
-				081BFCEA22A8C5FB00F7A3C6 /* AppDelegate.h */,
-				081BFCEB22A8C5FB00F7A3C6 /* AppDelegate.m */,
-				081BFCED22A8C5FB00F7A3C6 /* ViewController.h */,
-				081BFCEE22A8C5FB00F7A3C6 /* ViewController.m */,
+				081BFCEA22A8C5FB00F7A3C6 /* TYAppDelegate.h */,
+				081BFCEB22A8C5FB00F7A3C6 /* TYAppDelegate.m */,
+				081BFCED22A8C5FB00F7A3C6 /* TYStartPageController.h */,
+				081BFCEE22A8C5FB00F7A3C6 /* TYStartPageController.m */,
 				081BFCF022A8C5FB00F7A3C6 /* Main.storyboard */,
 				081BFCF322A8C5FD00F7A3C6 /* Assets.xcassets */,
 				081BFCF522A8C5FD00F7A3C6 /* LaunchScreen.storyboard */,
@@ -97,6 +97,7 @@
 		081BFCDF22A8C5FB00F7A3C6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = TY;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = Sheldon;
 				TargetAttributes = {
@@ -141,9 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				081BFCEF22A8C5FB00F7A3C6 /* ViewController.m in Sources */,
+				081BFCEF22A8C5FB00F7A3C6 /* TYStartPageController.m in Sources */,
 				081BFCFA22A8C5FD00F7A3C6 /* main.m in Sources */,
-				081BFCEC22A8C5FB00F7A3C6 /* AppDelegate.m in Sources */,
+				081BFCEC22A8C5FB00F7A3C6 /* TYAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  TYStartPageController.h
 //  TYDemos
 //
 //  Created by 田宇 on 2019/6/6.
@@ -8,9 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface TYStartPageController : UITableViewController
 
 
 @end

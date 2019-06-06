@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TYAppDelegate.h
 //  TYDemos
 //
 //  Created by 田宇 on 2019/6/6.
@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface TYAppDelegate : UIResponder <UIApplicationDelegate>
+
+@property (strong, nonatomic) UIWindow *window;
 
 
 @end
