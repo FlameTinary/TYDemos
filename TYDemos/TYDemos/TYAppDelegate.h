@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+//#import "GlobeViewController.h"
 
 @interface TYAppDelegate : UIResponder <UIApplicationDelegate>
 
