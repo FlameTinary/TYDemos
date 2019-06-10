@@ -1,0 +1,380 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08875AE322521D82008A2F33 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08875AE222521D82008A2F33 /* AppDelegate.m */; };
+		08875AE622521D82008A2F33 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08875AE522521D82008A2F33 /* ViewController.m */; };
+		08875AE922521D82008A2F33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08875AE722521D82008A2F33 /* Main.storyboard */; };
+		08875AEB22521D83008A2F33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08875AEA22521D83008A2F33 /* Assets.xcassets */; };
+		08875AEE22521D83008A2F33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08875AEC22521D83008A2F33 /* LaunchScreen.storyboard */; };
+		08875AF122521D83008A2F33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08875AF022521D83008A2F33 /* main.m */; };
+		08875AF9225220D8008A2F33 /* TYUIWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08875AF8225220D8008A2F33 /* TYUIWebViewController.m */; };
+		08875AFC225220E8008A2F33 /* TYWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08875AFB225220E8008A2F33 /* TYWKWebViewController.m */; };
+		08875AFF22522101008A2F33 /* TYJavaScriptCoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08875AFE22522101008A2F33 /* TYJavaScriptCoreViewController.m */; };
+		08875B032252335F008A2F33 /* TYTest.html in Resources */ = {isa = PBXBuildFile; fileRef = 08875B002252335E008A2F33 /* TYTest.html */; };
+		08875B042252335F008A2F33 /* TYTest.js in Resources */ = {isa = PBXBuildFile; fileRef = 08875B012252335E008A2F33 /* TYTest.js */; };
+		08875B052252335F008A2F33 /* TYTest.css in Resources */ = {isa = PBXBuildFile; fileRef = 08875B022252335F008A2F33 /* TYTest.css */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		08875ADE22521D82008A2F33 /* TYNativeAndWeb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TYNativeAndWeb.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		08875AE122521D82008A2F33 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		08875AE222521D82008A2F33 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		08875AE422521D82008A2F33 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		08875AE522521D82008A2F33 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		08875AE822521D82008A2F33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		08875AEA22521D83008A2F33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		08875AED22521D83008A2F33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		08875AEF22521D83008A2F33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08875AF022521D83008A2F33 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		08875AF7225220D8008A2F33 /* TYUIWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYUIWebViewController.h; sourceTree = "<group>"; };
+		08875AF8225220D8008A2F33 /* TYUIWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYUIWebViewController.m; sourceTree = "<group>"; };
+		08875AFA225220E8008A2F33 /* TYWKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYWKWebViewController.h; sourceTree = "<group>"; };
+		08875AFB225220E8008A2F33 /* TYWKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYWKWebViewController.m; sourceTree = "<group>"; };
+		08875AFD22522101008A2F33 /* TYJavaScriptCoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYJavaScriptCoreViewController.h; sourceTree = "<group>"; };
+		08875AFE22522101008A2F33 /* TYJavaScriptCoreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYJavaScriptCoreViewController.m; sourceTree = "<group>"; };
+		08875B002252335E008A2F33 /* TYTest.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = TYTest.html; sourceTree = "<group>"; };
+		08875B012252335E008A2F33 /* TYTest.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = TYTest.js; sourceTree = "<group>"; };
+		08875B022252335F008A2F33 /* TYTest.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = TYTest.css; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08875ADB22521D82008A2F33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08875AD522521D82008A2F33 = {
+			isa = PBXGroup;
+			children = (
+				08875AE022521D82008A2F33 /* TYNativeAndWeb */,
+				08875ADF22521D82008A2F33 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		08875ADF22521D82008A2F33 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08875ADE22521D82008A2F33 /* TYNativeAndWeb.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08875AE022521D82008A2F33 /* TYNativeAndWeb */ = {
+			isa = PBXGroup;
+			children = (
+				08875AE122521D82008A2F33 /* AppDelegate.h */,
+				08875AE222521D82008A2F33 /* AppDelegate.m */,
+				08875AE422521D82008A2F33 /* ViewController.h */,
+				08875AE522521D82008A2F33 /* ViewController.m */,
+				08875AF7225220D8008A2F33 /* TYUIWebViewController.h */,
+				08875AF8225220D8008A2F33 /* TYUIWebViewController.m */,
+				08875AFA225220E8008A2F33 /* TYWKWebViewController.h */,
+				08875AFB225220E8008A2F33 /* TYWKWebViewController.m */,
+				08875AFD22522101008A2F33 /* TYJavaScriptCoreViewController.h */,
+				08875AFE22522101008A2F33 /* TYJavaScriptCoreViewController.m */,
+				08875AE722521D82008A2F33 /* Main.storyboard */,
+				08875B062252336A008A2F33 /* webFiles */,
+				08875AEA22521D83008A2F33 /* Assets.xcassets */,
+				08875AEC22521D83008A2F33 /* LaunchScreen.storyboard */,
+				08875AEF22521D83008A2F33 /* Info.plist */,
+				08875AF022521D83008A2F33 /* main.m */,
+			);
+			path = TYNativeAndWeb;
+			sourceTree = "<group>";
+		};
+		08875B062252336A008A2F33 /* webFiles */ = {
+			isa = PBXGroup;
+			children = (
+				08875B022252335F008A2F33 /* TYTest.css */,
+				08875B002252335E008A2F33 /* TYTest.html */,
+				08875B012252335E008A2F33 /* TYTest.js */,
+			);
+			path = webFiles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08875ADD22521D82008A2F33 /* TYNativeAndWeb */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08875AF422521D83008A2F33 /* Build configuration list for PBXNativeTarget "TYNativeAndWeb" */;
+			buildPhases = (
+				08875ADA22521D82008A2F33 /* Sources */,
+				08875ADB22521D82008A2F33 /* Frameworks */,
+				08875ADC22521D82008A2F33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TYNativeAndWeb;
+			productName = TYNativeAndWeb;
+			productReference = 08875ADE22521D82008A2F33 /* TYNativeAndWeb.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08875AD622521D82008A2F33 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Sheldon;
+				TargetAttributes = {
+					08875ADD22521D82008A2F33 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+				};
+			};
+			buildConfigurationList = 08875AD922521D82008A2F33 /* Build configuration list for PBXProject "TYNativeAndWeb" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 08875AD522521D82008A2F33;
+			productRefGroup = 08875ADF22521D82008A2F33 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08875ADD22521D82008A2F33 /* TYNativeAndWeb */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08875ADC22521D82008A2F33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08875AEE22521D83008A2F33 /* LaunchScreen.storyboard in Resources */,
+				08875AEB22521D83008A2F33 /* Assets.xcassets in Resources */,
+				08875B052252335F008A2F33 /* TYTest.css in Resources */,
+				08875AE922521D82008A2F33 /* Main.storyboard in Resources */,
+				08875B032252335F008A2F33 /* TYTest.html in Resources */,
+				08875B042252335F008A2F33 /* TYTest.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08875ADA22521D82008A2F33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08875AE622521D82008A2F33 /* ViewController.m in Sources */,
+				08875AF122521D83008A2F33 /* main.m in Sources */,
+				08875AFF22522101008A2F33 /* TYJavaScriptCoreViewController.m in Sources */,
+				08875AFC225220E8008A2F33 /* TYWKWebViewController.m in Sources */,
+				08875AF9225220D8008A2F33 /* TYUIWebViewController.m in Sources */,
+				08875AE322521D82008A2F33 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		08875AE722521D82008A2F33 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08875AE822521D82008A2F33 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		08875AEC22521D83008A2F33 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08875AED22521D83008A2F33 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		08875AF222521D83008A2F33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		08875AF322521D83008A2F33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		08875AF522521D83008A2F33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CJ5L2XW65B;
+				INFOPLIST_FILE = TYNativeAndWeb/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = top.Sheldon.TYNativeAndWeb;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		08875AF622521D83008A2F33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CJ5L2XW65B;
+				INFOPLIST_FILE = TYNativeAndWeb/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = top.Sheldon.TYNativeAndWeb;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08875AD922521D82008A2F33 /* Build configuration list for PBXProject "TYNativeAndWeb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08875AF222521D83008A2F33 /* Debug */,
+				08875AF322521D83008A2F33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08875AF422521D83008A2F33 /* Build configuration list for PBXNativeTarget "TYNativeAndWeb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08875AF522521D83008A2F33 /* Debug */,
+				08875AF622521D83008A2F33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08875AD622521D82008A2F33 /* Project object */;
+}
