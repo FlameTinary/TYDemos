@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0815118A22B1F681005537B7 /* TYStartPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 081BFCEE22A8C5FB00F7A3C6 /* TYStartPageController.m */; };
+		0815118B22B1F681005537B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 081BFCF922A8C5FD00F7A3C6 /* main.m */; };
+		0815118C22B1F681005537B7 /* TYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 081BFCEB22A8C5FB00F7A3C6 /* TYAppDelegate.m */; };
+		0815118F22B1F681005537B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 081BFCF522A8C5FD00F7A3C6 /* LaunchScreen.storyboard */; };
+		0815119022B1F681005537B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 081BFCF322A8C5FD00F7A3C6 /* Assets.xcassets */; };
+		0815119122B1F681005537B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 081BFCF022A8C5FB00F7A3C6 /* Main.storyboard */; };
 		081BFCEC22A8C5FB00F7A3C6 /* TYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 081BFCEB22A8C5FB00F7A3C6 /* TYAppDelegate.m */; };
 		081BFCEF22A8C5FB00F7A3C6 /* TYStartPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 081BFCEE22A8C5FB00F7A3C6 /* TYStartPageController.m */; };
 		081BFCF222A8C5FB00F7A3C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 081BFCF022A8C5FB00F7A3C6 /* Main.storyboard */; };
@@ -16,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0815119522B1F681005537B7 /* qwer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qwer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0815119622B1F681005537B7 /* TYDemos copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "TYDemos copy-Info.plist"; path = "/Users/sheldon/Documents/TYDemos/TYDemos/TYDemos copy-Info.plist"; sourceTree = "<absolute>"; };
 		081BFCE722A8C5FB00F7A3C6 /* TYDemos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TYDemos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		081BFCEA22A8C5FB00F7A3C6 /* TYAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYAppDelegate.h; sourceTree = "<group>"; };
 		081BFCEB22A8C5FB00F7A3C6 /* TYAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYAppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +37,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0815118D22B1F681005537B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		081BFCE422A8C5FB00F7A3C6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -44,6 +59,7 @@
 			children = (
 				081BFCE922A8C5FB00F7A3C6 /* TYDemos */,
 				081BFCE822A8C5FB00F7A3C6 /* Products */,
+				0815119622B1F681005537B7 /* TYDemos copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				081BFCE722A8C5FB00F7A3C6 /* TYDemos.app */,
+				0815119522B1F681005537B7 /* qwer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,6 +91,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0815118822B1F681005537B7 /* qwer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0815119222B1F681005537B7 /* Build configuration list for PBXNativeTarget "qwer" */;
+			buildPhases = (
+				0815118922B1F681005537B7 /* Sources */,
+				0815118D22B1F681005537B7 /* Frameworks */,
+				0815118E22B1F681005537B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = qwer;
+			productName = TYDemos;
+			productReference = 0815119522B1F681005537B7 /* qwer.app */;
+			productType = "com.apple.product-type.application";
+		};
 		081BFCE622A8C5FB00F7A3C6 /* TYDemos */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 081BFCFD22A8C5FD00F7A3C6 /* Build configuration list for PBXNativeTarget "TYDemos" */;
@@ -120,11 +154,22 @@
 			projectRoot = "";
 			targets = (
 				081BFCE622A8C5FB00F7A3C6 /* TYDemos */,
+				0815118822B1F681005537B7 /* qwer */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0815118E22B1F681005537B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0815118F22B1F681005537B7 /* LaunchScreen.storyboard in Resources */,
+				0815119022B1F681005537B7 /* Assets.xcassets in Resources */,
+				0815119122B1F681005537B7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		081BFCE522A8C5FB00F7A3C6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -138,6 +183,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0815118922B1F681005537B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0815118A22B1F681005537B7 /* TYStartPageController.m in Sources */,
+				0815118B22B1F681005537B7 /* main.m in Sources */,
+				0815118C22B1F681005537B7 /* TYAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		081BFCE322A8C5FB00F7A3C6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -170,6 +225,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0815119322B1F681005537B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CC9XV3GRSV;
+				INFOPLIST_FILE = "TYDemos copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = top.sheldon.TYDemos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0815119422B1F681005537B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CC9XV3GRSV;
+				INFOPLIST_FILE = "TYDemos copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = top.sheldon.TYDemos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		081BFCFB22A8C5FD00F7A3C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -319,6 +408,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0815119222B1F681005537B7 /* Build configuration list for PBXNativeTarget "qwer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0815119322B1F681005537B7 /* Debug */,
+				0815119422B1F681005537B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		081BFCE222A8C5FB00F7A3C6 /* Build configuration list for PBXProject "TYDemos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
