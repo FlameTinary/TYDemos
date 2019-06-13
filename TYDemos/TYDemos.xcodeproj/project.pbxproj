@@ -7,25 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0815118A22B1F681005537B7 /* TYStartPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 081BFCEE22A8C5FB00F7A3C6 /* TYStartPageController.m */; };
-		0815118B22B1F681005537B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 081BFCF922A8C5FD00F7A3C6 /* main.m */; };
-		0815118C22B1F681005537B7 /* TYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 081BFCEB22A8C5FB00F7A3C6 /* TYAppDelegate.m */; };
-		0815118F22B1F681005537B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 081BFCF522A8C5FD00F7A3C6 /* LaunchScreen.storyboard */; };
-		0815119022B1F681005537B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 081BFCF322A8C5FD00F7A3C6 /* Assets.xcassets */; };
-		0815119122B1F681005537B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 081BFCF022A8C5FB00F7A3C6 /* Main.storyboard */; };
 		0815119C22B200BD005537B7 /* DebugConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 0815119B22B200BD005537B7 /* DebugConfig.xcconfig */; };
-		0815119D22B200BD005537B7 /* DebugConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 0815119B22B200BD005537B7 /* DebugConfig.xcconfig */; };
 		081BFCEC22A8C5FB00F7A3C6 /* TYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 081BFCEB22A8C5FB00F7A3C6 /* TYAppDelegate.m */; };
 		081BFCEF22A8C5FB00F7A3C6 /* TYStartPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 081BFCEE22A8C5FB00F7A3C6 /* TYStartPageController.m */; };
 		081BFCF222A8C5FB00F7A3C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 081BFCF022A8C5FB00F7A3C6 /* Main.storyboard */; };
 		081BFCF422A8C5FD00F7A3C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 081BFCF322A8C5FD00F7A3C6 /* Assets.xcassets */; };
 		081BFCF722A8C5FD00F7A3C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 081BFCF522A8C5FD00F7A3C6 /* LaunchScreen.storyboard */; };
 		081BFCFA22A8C5FD00F7A3C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 081BFCF922A8C5FD00F7A3C6 /* main.m */; };
+		1124A599EEB30F1BFD7D62B6 /* libPods-TYDemos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E940AC1CB78B306686C3CF /* libPods-TYDemos.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0815119522B1F681005537B7 /* qwer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qwer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0815119622B1F681005537B7 /* TYDemos copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "TYDemos copy-Info.plist"; path = "/Users/sheldon/Documents/TYDemos/TYDemos/TYDemos copy-Info.plist"; sourceTree = "<absolute>"; };
+		005BAA7F996AE6E47C95B85F /* Pods-TYDemos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYDemos.debug.xcconfig"; path = "Target Support Files/Pods-TYDemos/Pods-TYDemos.debug.xcconfig"; sourceTree = "<group>"; };
 		0815119B22B200BD005537B7 /* DebugConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DebugConfig.xcconfig; sourceTree = "<group>"; };
 		0815119E22B200DA005537B7 /* ReleaseConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ReleaseConfig.xcconfig; sourceTree = "<group>"; };
 		0815119F22B200F0005537B7 /* ReleaseTestConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ReleaseTestConfig.xcconfig; sourceTree = "<group>"; };
@@ -40,20 +33,17 @@
 		081BFCF622A8C5FD00F7A3C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		081BFCF822A8C5FD00F7A3C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		081BFCF922A8C5FD00F7A3C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		721D96288B15E29F2CE781C7 /* Pods-TYDemos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYDemos.release.xcconfig"; path = "Target Support Files/Pods-TYDemos/Pods-TYDemos.release.xcconfig"; sourceTree = "<group>"; };
+		91E940AC1CB78B306686C3CF /* libPods-TYDemos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TYDemos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC06E919494F28AF15753DD2 /* Pods-TYDemos.xcconfigtest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYDemos.xcconfigtest.xcconfig"; path = "Target Support Files/Pods-TYDemos/Pods-TYDemos.xcconfigtest.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0815118D22B1F681005537B7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		081BFCE422A8C5FB00F7A3C6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1124A599EEB30F1BFD7D62B6 /* libPods-TYDemos.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,7 +66,8 @@
 			children = (
 				081BFCE922A8C5FB00F7A3C6 /* TYDemos */,
 				081BFCE822A8C5FB00F7A3C6 /* Products */,
-				0815119622B1F681005537B7 /* TYDemos copy-Info.plist */,
+				DBF9485AD747506D7CA5BCEC /* Pods */,
+				59EB7CAB37CBEB82767A68D3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,7 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				081BFCE722A8C5FB00F7A3C6 /* TYDemos.app */,
-				0815119522B1F681005537B7 /* qwer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,30 +96,32 @@
 			path = TYDemos;
 			sourceTree = "<group>";
 		};
+		59EB7CAB37CBEB82767A68D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91E940AC1CB78B306686C3CF /* libPods-TYDemos.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DBF9485AD747506D7CA5BCEC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				005BAA7F996AE6E47C95B85F /* Pods-TYDemos.debug.xcconfig */,
+				CC06E919494F28AF15753DD2 /* Pods-TYDemos.xcconfigtest.xcconfig */,
+				721D96288B15E29F2CE781C7 /* Pods-TYDemos.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0815118822B1F681005537B7 /* qwer */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0815119222B1F681005537B7 /* Build configuration list for PBXNativeTarget "qwer" */;
-			buildPhases = (
-				0815118922B1F681005537B7 /* Sources */,
-				0815118D22B1F681005537B7 /* Frameworks */,
-				0815118E22B1F681005537B7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = qwer;
-			productName = TYDemos;
-			productReference = 0815119522B1F681005537B7 /* qwer.app */;
-			productType = "com.apple.product-type.application";
-		};
 		081BFCE622A8C5FB00F7A3C6 /* TYDemos */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 081BFCFD22A8C5FD00F7A3C6 /* Build configuration list for PBXNativeTarget "TYDemos" */;
 			buildPhases = (
+				3FEFA0EFE3CE38D295CF412C /* [CP] Check Pods Manifest.lock */,
 				081BFCE322A8C5FB00F7A3C6 /* Sources */,
 				081BFCE422A8C5FB00F7A3C6 /* Frameworks */,
 				081BFCE522A8C5FB00F7A3C6 /* Resources */,
@@ -172,23 +164,11 @@
 			projectRoot = "";
 			targets = (
 				081BFCE622A8C5FB00F7A3C6 /* TYDemos */,
-				0815118822B1F681005537B7 /* qwer */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0815118E22B1F681005537B7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0815119D22B200BD005537B7 /* DebugConfig.xcconfig in Resources */,
-				0815118F22B1F681005537B7 /* LaunchScreen.storyboard in Resources */,
-				0815119022B1F681005537B7 /* Assets.xcassets in Resources */,
-				0815119122B1F681005537B7 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		081BFCE522A8C5FB00F7A3C6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -202,17 +182,32 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXSourcesBuildPhase section */
-		0815118922B1F681005537B7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXShellScriptBuildPhase section */
+		3FEFA0EFE3CE38D295CF412C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0815118A22B1F681005537B7 /* TYStartPageController.m in Sources */,
-				0815118B22B1F681005537B7 /* main.m in Sources */,
-				0815118C22B1F681005537B7 /* TYAppDelegate.m in Sources */,
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TYDemos-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
 		081BFCE322A8C5FB00F7A3C6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -245,44 +240,8 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		0815119322B1F681005537B7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0815119B22B200BD005537B7 /* DebugConfig.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CC9XV3GRSV;
-				INFOPLIST_FILE = "TYDemos copy-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = top.sheldon.TYDemos;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		0815119422B1F681005537B7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CC9XV3GRSV;
-				INFOPLIST_FILE = "TYDemos copy-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = top.sheldon.TYDemos;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		0815119722B20024005537B7 /* XCConfigTest */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0815119F22B200F0005537B7 /* ReleaseTestConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -342,28 +301,13 @@
 		};
 		0815119822B20024005537B7 /* XCConfigTest */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0815119F22B200F0005537B7 /* ReleaseTestConfig.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CC9XV3GRSV;
 				INFOPLIST_FILE = TYDemos/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = top.sheldon.TYDemos;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = XCConfigTest;
-		};
-		0815119922B20024005537B7 /* XCConfigTest */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CC9XV3GRSV;
-				INFOPLIST_FILE = "TYDemos copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -435,7 +379,6 @@
 		};
 		081BFCFC22A8C5FD00F7A3C6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0815119E22B200DA005537B7 /* ReleaseConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -495,6 +438,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CC9XV3GRSV;
 				INFOPLIST_FILE = TYDemos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -507,11 +451,13 @@
 		};
 		081BFCFF22A8C5FD00F7A3C6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0815119E22B200DA005537B7 /* ReleaseConfig.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CC9XV3GRSV;
 				INFOPLIST_FILE = TYDemos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -525,16 +471,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0815119222B1F681005537B7 /* Build configuration list for PBXNativeTarget "qwer" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0815119322B1F681005537B7 /* Debug */,
-				0815119922B20024005537B7 /* XCConfigTest */,
-				0815119422B1F681005537B7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		081BFCE222A8C5FB00F7A3C6 /* Build configuration list for PBXProject "TYDemos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

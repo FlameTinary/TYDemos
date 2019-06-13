@@ -11,6 +11,8 @@
 
 #include "CommonConfig.xcconfig"
 
+#include "pods/Target Support Files/Pods-TYDemos/Pods-TYDemos.debug.xcconfig"
+
 APP_DISPLAY_NAME = 测试服
 
 CONFIG_FLAG = DEBUG

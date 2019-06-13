@@ -11,6 +11,8 @@
 
 #include "CommonConfig.xcconfig"
 
+#include "pods/Target Support Files/Pods-TYDemos/Pods-TYDemos.xcconfigtest.xcconfig"
+
 APP_DISPLAY_NAME = 正式服
 
 CONFIG_FLAG = RELEASE_TEST

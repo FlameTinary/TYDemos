@@ -2,27 +2,30 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../CPPTest/CPPTest.xcodeproj">
+      location = "group:OtherProjects/TYToolSet/TYToolSet.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../TYOpenGLESDemo/TYOpenGLESDemo.xcodeproj">
+      location = "group:OtherProjects/TYOperationDemo/TYOperationDemo.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../TYGameSceneDemo/TYGameSceneDemo.xcodeproj">
+      location = "group:OtherProjects/TYOpenGLESDemo/TYOpenGLESDemo.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../TYNativeAndWeb/TYNativeAndWeb.xcodeproj">
+      location = "group:OtherProjects/TYNativeAndWeb/TYNativeAndWeb.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../TYOperationDemo/TYOperationDemo.xcodeproj">
+      location = "group:OtherProjects/TYGameSceneDemo/TYGameSceneDemo.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../SSVirtualLocation-master/SSVirtualLocation.xcodeproj">
+      location = "group:OtherProjects/SSVirtualLocation-master/SSVirtualLocation.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../TYToolSet/TYToolSet.xcodeproj">
+      location = "group:OtherProjects/CPPTest/CPPTest.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:TYDemos.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

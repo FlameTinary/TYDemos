@@ -1,4 +1,5 @@
 # Xcode
+.DS_Store
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
@@ -17,10 +18,21 @@ DerivedData/
 !default.perspectivev3
 xcuserdata/
 
+### Xcode Patch ###
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcworkspace/contents.xcworkspacedata
+/*.gcno
+
 ## Other
 *.moved-aside
 *.xccheckout
 *.xcscmblueprint
+DerivedData
+.idea/
+*.xcworkspace
+!default.xcworkspace
 
 ## Obj-C/Swift specific
 *.hmap
@@ -34,7 +46,10 @@ xcuserdata/
 # you should judge for yourself, the pros and cons are mentioned at:
 # https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
 #
-# Pods/
+
+#CocoaPods
+Pods/
+Podfile.lock
 
 # Carthage
 #
