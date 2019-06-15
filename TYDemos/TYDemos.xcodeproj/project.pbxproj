@@ -14,6 +14,8 @@
 		081BFCF422A8C5FD00F7A3C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 081BFCF322A8C5FD00F7A3C6 /* Assets.xcassets */; };
 		081BFCF722A8C5FD00F7A3C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 081BFCF522A8C5FD00F7A3C6 /* LaunchScreen.storyboard */; };
 		081BFCFA22A8C5FD00F7A3C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 081BFCF922A8C5FD00F7A3C6 /* main.m */; };
+		0850C4F222B497BB00A57A4E /* TYHomeDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0850C4F122B497BB00A57A4E /* TYHomeDataModel.m */; };
+		0896C8E522B49362005E35E4 /* HomePageData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0896C8E422B49362005E35E4 /* HomePageData.plist */; };
 		1124A599EEB30F1BFD7D62B6 /* libPods-TYDemos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E940AC1CB78B306686C3CF /* libPods-TYDemos.a */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +35,10 @@
 		081BFCF622A8C5FD00F7A3C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		081BFCF822A8C5FD00F7A3C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		081BFCF922A8C5FD00F7A3C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0850C4EF22B495A600A57A4E /* TYPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYPrefixHeader.pch; sourceTree = "<group>"; };
+		0850C4F022B497BB00A57A4E /* TYHomeDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYHomeDataModel.h; sourceTree = "<group>"; };
+		0850C4F122B497BB00A57A4E /* TYHomeDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYHomeDataModel.m; sourceTree = "<group>"; };
+		0896C8E422B49362005E35E4 /* HomePageData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = HomePageData.plist; sourceTree = "<group>"; };
 		721D96288B15E29F2CE781C7 /* Pods-TYDemos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYDemos.release.xcconfig"; path = "Target Support Files/Pods-TYDemos/Pods-TYDemos.release.xcconfig"; sourceTree = "<group>"; };
 		91E940AC1CB78B306686C3CF /* libPods-TYDemos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TYDemos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC06E919494F28AF15753DD2 /* Pods-TYDemos.xcconfigtest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYDemos.xcconfigtest.xcconfig"; path = "Target Support Files/Pods-TYDemos/Pods-TYDemos.xcconfigtest.xcconfig"; sourceTree = "<group>"; };
@@ -82,18 +88,62 @@
 		081BFCE922A8C5FB00F7A3C6 /* TYDemos */ = {
 			isa = PBXGroup;
 			children = (
+				0896C8DF22B49298005E35E4 /* HomePage */,
 				0815119A22B2009E005537B7 /* Configs */,
 				081BFCEA22A8C5FB00F7A3C6 /* TYAppDelegate.h */,
 				081BFCEB22A8C5FB00F7A3C6 /* TYAppDelegate.m */,
-				081BFCED22A8C5FB00F7A3C6 /* TYStartPageController.h */,
-				081BFCEE22A8C5FB00F7A3C6 /* TYStartPageController.m */,
 				081BFCF022A8C5FB00F7A3C6 /* Main.storyboard */,
 				081BFCF322A8C5FD00F7A3C6 /* Assets.xcassets */,
 				081BFCF522A8C5FD00F7A3C6 /* LaunchScreen.storyboard */,
 				081BFCF822A8C5FD00F7A3C6 /* Info.plist */,
 				081BFCF922A8C5FD00F7A3C6 /* main.m */,
+				0850C4EF22B495A600A57A4E /* TYPrefixHeader.pch */,
 			);
 			path = TYDemos;
+			sourceTree = "<group>";
+		};
+		0896C8DF22B49298005E35E4 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				0896C8E322B49333005E35E4 /* Others */,
+				0896C8E222B492EE005E35E4 /* Views */,
+				0896C8E122B492E7005E35E4 /* Models */,
+				0896C8E022B492D5005E35E4 /* Controllers */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		0896C8E022B492D5005E35E4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				081BFCED22A8C5FB00F7A3C6 /* TYStartPageController.h */,
+				081BFCEE22A8C5FB00F7A3C6 /* TYStartPageController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0896C8E122B492E7005E35E4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0850C4F022B497BB00A57A4E /* TYHomeDataModel.h */,
+				0850C4F122B497BB00A57A4E /* TYHomeDataModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0896C8E222B492EE005E35E4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0896C8E322B49333005E35E4 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				0896C8E422B49362005E35E4 /* HomePageData.plist */,
+			);
+			path = Others;
 			sourceTree = "<group>";
 		};
 		59EB7CAB37CBEB82767A68D3 /* Frameworks */ = {
@@ -173,6 +223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0896C8E522B49362005E35E4 /* HomePageData.plist in Resources */,
 				0815119C22B200BD005537B7 /* DebugConfig.xcconfig in Resources */,
 				081BFCF722A8C5FD00F7A3C6 /* LaunchScreen.storyboard in Resources */,
 				081BFCF422A8C5FD00F7A3C6 /* Assets.xcassets in Resources */,
@@ -213,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				081BFCEF22A8C5FB00F7A3C6 /* TYStartPageController.m in Sources */,
+				0850C4F222B497BB00A57A4E /* TYHomeDataModel.m in Sources */,
 				081BFCFA22A8C5FD00F7A3C6 /* main.m in Sources */,
 				081BFCEC22A8C5FB00F7A3C6 /* TYAppDelegate.m in Sources */,
 			);
@@ -281,6 +333,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TYDemos/TYPrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -359,6 +413,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TYDemos/TYPrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -416,6 +472,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TYDemos/TYPrefixHeader.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
