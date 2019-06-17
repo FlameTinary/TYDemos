@@ -46,9 +46,9 @@
         
         [_videoView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.mas_equalTo(200);
-            make.bottom.mas_equalTo(-200);
-            make.left.mas_equalTo(80);
-            make.right.mas_equalTo(-80);
+            make.bottom.mas_equalTo(-300);
+            make.left.mas_equalTo(70);
+            make.right.mas_equalTo(-70);
         }];
         
         return;

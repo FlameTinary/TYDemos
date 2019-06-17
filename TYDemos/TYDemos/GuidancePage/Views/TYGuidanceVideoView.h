@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TYGuidanceVideoView : UIView
 
-@property(nonatomic, strong) AVPlayer *player;
+//@property(nonatomic, strong) AVPlayer *player;
 
 - (instancetype)initWithUrl:(NSURL *)url;
 
