@@ -20,6 +20,8 @@
 		0850C50522B4F60600A57A4E /* TYStudent.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0850C50222B4F60600A57A4E /* TYStudent.mm */; };
 		0850C50D22B7390300A57A4E /* TYGuidanceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0850C50C22B7390300A57A4E /* TYGuidanceVC.m */; };
 		0850C50F22B7399100A57A4E /* guidanceImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0850C50E22B7399100A57A4E /* guidanceImages.xcassets */; };
+		0850C51122B7443700A57A4E /* guidanceVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0850C51022B7443700A57A4E /* guidanceVideo.mp4 */; };
+		0850C51322B7477E00A57A4E /* guidanceHTML.html in Resources */ = {isa = PBXBuildFile; fileRef = 0850C51222B7477E00A57A4E /* guidanceHTML.html */; };
 		0896C8E522B49362005E35E4 /* HomePageData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0896C8E422B49362005E35E4 /* HomePageData.plist */; };
 		1124A599EEB30F1BFD7D62B6 /* libPods-TYDemos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E940AC1CB78B306686C3CF /* libPods-TYDemos.a */; };
 /* End PBXBuildFile section */
@@ -54,6 +56,8 @@
 		0850C50B22B7390300A57A4E /* TYGuidanceVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYGuidanceVC.h; sourceTree = "<group>"; };
 		0850C50C22B7390300A57A4E /* TYGuidanceVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYGuidanceVC.m; sourceTree = "<group>"; };
 		0850C50E22B7399100A57A4E /* guidanceImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = guidanceImages.xcassets; sourceTree = "<group>"; };
+		0850C51022B7443700A57A4E /* guidanceVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = guidanceVideo.mp4; sourceTree = "<group>"; };
+		0850C51222B7477E00A57A4E /* guidanceHTML.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = guidanceHTML.html; sourceTree = "<group>"; };
 		0896C8E422B49362005E35E4 /* HomePageData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = HomePageData.plist; sourceTree = "<group>"; };
 		721D96288B15E29F2CE781C7 /* Pods-TYDemos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYDemos.release.xcconfig"; path = "Target Support Files/Pods-TYDemos/Pods-TYDemos.release.xcconfig"; sourceTree = "<group>"; };
 		91E940AC1CB78B306686C3CF /* libPods-TYDemos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TYDemos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -173,6 +177,8 @@
 		0850C50722B7383400A57A4E /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				0850C51222B7477E00A57A4E /* guidanceHTML.html */,
+				0850C51022B7443700A57A4E /* guidanceVideo.mp4 */,
 				0850C50E22B7399100A57A4E /* guidanceImages.xcassets */,
 			);
 			path = Others;
@@ -323,8 +329,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0896C8E522B49362005E35E4 /* HomePageData.plist in Resources */,
+				0850C51322B7477E00A57A4E /* guidanceHTML.html in Resources */,
 				0815119C22B200BD005537B7 /* DebugConfig.xcconfig in Resources */,
 				081BFCF722A8C5FD00F7A3C6 /* LaunchScreen.storyboard in Resources */,
+				0850C51122B7443700A57A4E /* guidanceVideo.mp4 in Resources */,
 				081BFCF422A8C5FD00F7A3C6 /* Assets.xcassets in Resources */,
 				0850C50F22B7399100A57A4E /* guidanceImages.xcassets in Resources */,
 				081BFCF222A8C5FB00F7A3C6 /* Main.storyboard in Resources */,

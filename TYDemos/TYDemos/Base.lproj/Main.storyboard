@@ -48,19 +48,28 @@
                                     <outletCollection property="gestureRecognizers" destination="NKd-er-FFv" appends="YES" id="7a8-FW-vhW"/>
                                 </connections>
                             </imageView>
+                            <webView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SaC-vO-mre">
+                                <rect key="frame" x="80" y="288" width="254" height="374"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="LOj-WB-J5q" firstAttribute="trailing" secondItem="SaC-vO-mre" secondAttribute="trailing" constant="80" id="M5m-L7-yNc"/>
                             <constraint firstItem="VFV-Ae-68c" firstAttribute="top" secondItem="LOj-WB-J5q" secondAttribute="top" id="Y0o-vy-G68"/>
                             <constraint firstItem="VFV-Ae-68c" firstAttribute="leading" secondItem="LOj-WB-J5q" secondAttribute="leading" id="fEF-fQ-rhw"/>
                             <constraint firstItem="LOj-WB-J5q" firstAttribute="bottom" secondItem="VFV-Ae-68c" secondAttribute="bottom" id="gso-WE-MUA"/>
+                            <constraint firstItem="LOj-WB-J5q" firstAttribute="bottom" secondItem="SaC-vO-mre" secondAttribute="bottom" constant="200" id="itz-KA-apV"/>
+                            <constraint firstItem="SaC-vO-mre" firstAttribute="top" secondItem="LOj-WB-J5q" secondAttribute="top" constant="200" id="vDE-xc-wI4"/>
                             <constraint firstItem="LOj-WB-J5q" firstAttribute="trailing" secondItem="VFV-Ae-68c" secondAttribute="trailing" id="wnY-gr-Bv9"/>
+                            <constraint firstItem="SaC-vO-mre" firstAttribute="leading" secondItem="LOj-WB-J5q" secondAttribute="leading" constant="80" id="yEV-Y9-hwL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LOj-WB-J5q"/>
                     </view>
                     <connections>
                         <outlet property="guidanceImageView" destination="VFV-Ae-68c" id="MC2-Yi-sng"/>
                         <outlet property="guidanceTap" destination="NKd-er-FFv" id="F76-fa-zT7"/>
+                        <outlet property="guidanceWebView" destination="SaC-vO-mre" id="HeY-oz-TSJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0AF-rB-GXI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -70,7 +79,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1645" y="360"/>
+            <point key="canvasLocation" x="1644.9275362318842" y="359.59821428571428"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ddQ-1B-qdU">

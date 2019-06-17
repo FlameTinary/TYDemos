@@ -12,6 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *guidanceImageView;
 @property (strong, nonatomic) IBOutlet UITapGestureRecognizer *guidanceTap;
+@property (weak, nonatomic) IBOutlet UIWebView *guidanceWebView;
 
 @property(nonatomic, strong) NSArray * guidanceImageArray;
 @property(nonatomic, assign) int imageCount;
@@ -28,9 +29,19 @@
 }
 
 - (IBAction)guidanceTapClick:(UITapGestureRecognizer *)sender {
+    
     NSString * currentImageName = [self.guidanceImageView.image accessibilityIdentifier];
     NSString * lastImageName = [_guidanceImageArray lastObject];
-    if ([currentImageName isEqualToString:lastImageName]) return;
+    if ([currentImageName isEqualToString:lastImageName]) {
+        if (!_guidanceWebView.hidden) return;
+        _guidanceWebView.hidden = NO;
+        _guidanceWebView.allowsInlineMediaPlayback = YES;
+        NSString * guidanceVideoPath = [[NSBundle mainBundle] pathForResource:@"guidanceVideo" ofType:@"mp4"];
+        NSURL *url = [NSURL fileURLWithPath:guidanceVideoPath];
+        NSURLRequest * request = [NSURLRequest requestWithURL:url];
+        [_guidanceWebView loadRequest:request];
+        return;
+    };
     
     NSUInteger currentImageIndex = [_guidanceImageArray indexOfObject:currentImageName];
     
@@ -40,6 +51,7 @@
     if (point.x > 100 && point.x < 300 && point.y > 100 && point.y < 200) { // 判断是否在点击范围之内
         self.guidanceImageView.image = [UIImage imageNamed:_guidanceImageArray[currentImageIndex + 1]];
     }
+    
 }
 
 /*
