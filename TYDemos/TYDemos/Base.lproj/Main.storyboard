@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -23,10 +24,53 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="首页" id="SRd-at-odT"/>
+                    <connections>
+                        <segue destination="oLz-qi-JRg" kind="show" identifier="showWCDBDemo" id="25o-ZG-pps"/>
+                        <segue destination="8Nr-w0-tWC" kind="show" identifier="showGuidancePage" id="MvL-B7-lPI"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OUf-7K-scc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="729" y="292"/>
+        </scene>
+        <!--Guidance Page-->
+        <scene sceneID="mES-NZ-1d5">
+            <objects>
+                <viewController title="Guidance Page" id="8Nr-w0-tWC" customClass="TYGuidanceVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hA5-r8-4Ao">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guidance_1" translatesAutoresizingMaskIntoConstraints="NO" id="VFV-Ae-68c">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="NKd-er-FFv" appends="YES" id="7a8-FW-vhW"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VFV-Ae-68c" firstAttribute="top" secondItem="LOj-WB-J5q" secondAttribute="top" id="Y0o-vy-G68"/>
+                            <constraint firstItem="VFV-Ae-68c" firstAttribute="leading" secondItem="LOj-WB-J5q" secondAttribute="leading" id="fEF-fQ-rhw"/>
+                            <constraint firstItem="LOj-WB-J5q" firstAttribute="bottom" secondItem="VFV-Ae-68c" secondAttribute="bottom" id="gso-WE-MUA"/>
+                            <constraint firstItem="LOj-WB-J5q" firstAttribute="trailing" secondItem="VFV-Ae-68c" secondAttribute="trailing" id="wnY-gr-Bv9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LOj-WB-J5q"/>
+                    </view>
+                    <connections>
+                        <outlet property="guidanceImageView" destination="VFV-Ae-68c" id="MC2-Yi-sng"/>
+                        <outlet property="guidanceTap" destination="NKd-er-FFv" id="F76-fa-zT7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0AF-rB-GXI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="NKd-er-FFv">
+                    <connections>
+                        <action selector="guidanceTapClick:" destination="8Nr-w0-tWC" id="vWH-9R-SrY"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1645" y="360"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ddQ-1B-qdU">
@@ -44,5 +88,37 @@
             </objects>
             <point key="canvasLocation" x="-248" y="292"/>
         </scene>
+        <!--WCDB-->
+        <scene sceneID="DEC-XN-ZeM">
+            <objects>
+                <tableViewController id="oLz-qi-JRg" customClass="TYWCDBStartVC" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="zxB-IE-DS6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ena-qs-Eqq">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ena-qs-Eqq" id="1NH-f3-Kv4">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="oLz-qi-JRg" id="4SU-1p-vtK"/>
+                            <outlet property="delegate" destination="oLz-qi-JRg" id="8u1-xb-CRs"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="WCDB" id="T4c-Od-Bry"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DA5-0F-cRc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1645" y="-317"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="guidance_1" width="1125" height="2436"/>
+    </resources>
 </document>

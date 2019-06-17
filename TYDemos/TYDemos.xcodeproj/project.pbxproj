@@ -15,6 +15,11 @@
 		081BFCF722A8C5FD00F7A3C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 081BFCF522A8C5FD00F7A3C6 /* LaunchScreen.storyboard */; };
 		081BFCFA22A8C5FD00F7A3C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 081BFCF922A8C5FD00F7A3C6 /* main.m */; };
 		0850C4F222B497BB00A57A4E /* TYHomeDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0850C4F122B497BB00A57A4E /* TYHomeDataModel.m */; };
+		0850C4F922B49EEB00A57A4E /* TYWCDBStartVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0850C4F822B49EEB00A57A4E /* TYWCDBStartVC.m */; };
+		0850C4FD22B4F45400A57A4E /* TYPerson.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0850C4FA22B4F45400A57A4E /* TYPerson.mm */; };
+		0850C50522B4F60600A57A4E /* TYStudent.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0850C50222B4F60600A57A4E /* TYStudent.mm */; };
+		0850C50D22B7390300A57A4E /* TYGuidanceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0850C50C22B7390300A57A4E /* TYGuidanceVC.m */; };
+		0850C50F22B7399100A57A4E /* guidanceImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0850C50E22B7399100A57A4E /* guidanceImages.xcassets */; };
 		0896C8E522B49362005E35E4 /* HomePageData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0896C8E422B49362005E35E4 /* HomePageData.plist */; };
 		1124A599EEB30F1BFD7D62B6 /* libPods-TYDemos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E940AC1CB78B306686C3CF /* libPods-TYDemos.a */; };
 /* End PBXBuildFile section */
@@ -38,6 +43,17 @@
 		0850C4EF22B495A600A57A4E /* TYPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYPrefixHeader.pch; sourceTree = "<group>"; };
 		0850C4F022B497BB00A57A4E /* TYHomeDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYHomeDataModel.h; sourceTree = "<group>"; };
 		0850C4F122B497BB00A57A4E /* TYHomeDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYHomeDataModel.m; sourceTree = "<group>"; };
+		0850C4F722B49EEB00A57A4E /* TYWCDBStartVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYWCDBStartVC.h; sourceTree = "<group>"; };
+		0850C4F822B49EEB00A57A4E /* TYWCDBStartVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYWCDBStartVC.m; sourceTree = "<group>"; };
+		0850C4FA22B4F45400A57A4E /* TYPerson.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TYPerson.mm; sourceTree = "<group>"; };
+		0850C4FB22B4F45400A57A4E /* TYPerson+WCTTableCoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TYPerson+WCTTableCoding.h"; sourceTree = "<group>"; };
+		0850C4FC22B4F45400A57A4E /* TYPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYPerson.h; sourceTree = "<group>"; };
+		0850C50222B4F60600A57A4E /* TYStudent.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TYStudent.mm; sourceTree = "<group>"; };
+		0850C50322B4F60600A57A4E /* TYStudent+WCTTableCoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TYStudent+WCTTableCoding.h"; sourceTree = "<group>"; };
+		0850C50422B4F60600A57A4E /* TYStudent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYStudent.h; sourceTree = "<group>"; };
+		0850C50B22B7390300A57A4E /* TYGuidanceVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYGuidanceVC.h; sourceTree = "<group>"; };
+		0850C50C22B7390300A57A4E /* TYGuidanceVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYGuidanceVC.m; sourceTree = "<group>"; };
+		0850C50E22B7399100A57A4E /* guidanceImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = guidanceImages.xcassets; sourceTree = "<group>"; };
 		0896C8E422B49362005E35E4 /* HomePageData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = HomePageData.plist; sourceTree = "<group>"; };
 		721D96288B15E29F2CE781C7 /* Pods-TYDemos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYDemos.release.xcconfig"; path = "Target Support Files/Pods-TYDemos/Pods-TYDemos.release.xcconfig"; sourceTree = "<group>"; };
 		91E940AC1CB78B306686C3CF /* libPods-TYDemos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TYDemos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +104,8 @@
 		081BFCE922A8C5FB00F7A3C6 /* TYDemos */ = {
 			isa = PBXGroup;
 			children = (
+				0850C50622B7376100A57A4E /* GuidancePage */,
+				0850C4F322B49E7900A57A4E /* WCDBPage */,
 				0896C8DF22B49298005E35E4 /* HomePage */,
 				0815119A22B2009E005537B7 /* Configs */,
 				081BFCEA22A8C5FB00F7A3C6 /* TYAppDelegate.h */,
@@ -100,6 +118,87 @@
 				0850C4EF22B495A600A57A4E /* TYPrefixHeader.pch */,
 			);
 			path = TYDemos;
+			sourceTree = "<group>";
+		};
+		0850C4F322B49E7900A57A4E /* WCDBPage */ = {
+			isa = PBXGroup;
+			children = (
+				0850C4F622B49EB900A57A4E /* Views */,
+				0850C4F522B49EA600A57A4E /* Models */,
+				0850C4F422B49E9600A57A4E /* Controllers */,
+			);
+			path = WCDBPage;
+			sourceTree = "<group>";
+		};
+		0850C4F422B49E9600A57A4E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0850C4F722B49EEB00A57A4E /* TYWCDBStartVC.h */,
+				0850C4F822B49EEB00A57A4E /* TYWCDBStartVC.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0850C4F522B49EA600A57A4E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0850C4FC22B4F45400A57A4E /* TYPerson.h */,
+				0850C4FA22B4F45400A57A4E /* TYPerson.mm */,
+				0850C4FB22B4F45400A57A4E /* TYPerson+WCTTableCoding.h */,
+				0850C50422B4F60600A57A4E /* TYStudent.h */,
+				0850C50222B4F60600A57A4E /* TYStudent.mm */,
+				0850C50322B4F60600A57A4E /* TYStudent+WCTTableCoding.h */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0850C4F622B49EB900A57A4E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0850C50622B7376100A57A4E /* GuidancePage */ = {
+			isa = PBXGroup;
+			children = (
+				0850C50A22B7387000A57A4E /* Controllers */,
+				0850C50922B7386700A57A4E /* Views */,
+				0850C50822B7385B00A57A4E /* Models */,
+				0850C50722B7383400A57A4E /* Others */,
+			);
+			path = GuidancePage;
+			sourceTree = "<group>";
+		};
+		0850C50722B7383400A57A4E /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				0850C50E22B7399100A57A4E /* guidanceImages.xcassets */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		0850C50822B7385B00A57A4E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0850C50922B7386700A57A4E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0850C50A22B7387000A57A4E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0850C50B22B7390300A57A4E /* TYGuidanceVC.h */,
+				0850C50C22B7390300A57A4E /* TYGuidanceVC.m */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		0896C8DF22B49298005E35E4 /* HomePage */ = {
@@ -227,6 +326,7 @@
 				0815119C22B200BD005537B7 /* DebugConfig.xcconfig in Resources */,
 				081BFCF722A8C5FD00F7A3C6 /* LaunchScreen.storyboard in Resources */,
 				081BFCF422A8C5FD00F7A3C6 /* Assets.xcassets in Resources */,
+				0850C50F22B7399100A57A4E /* guidanceImages.xcassets in Resources */,
 				081BFCF222A8C5FB00F7A3C6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,8 +365,12 @@
 			files = (
 				081BFCEF22A8C5FB00F7A3C6 /* TYStartPageController.m in Sources */,
 				0850C4F222B497BB00A57A4E /* TYHomeDataModel.m in Sources */,
+				0850C50522B4F60600A57A4E /* TYStudent.mm in Sources */,
+				0850C4F922B49EEB00A57A4E /* TYWCDBStartVC.m in Sources */,
 				081BFCFA22A8C5FD00F7A3C6 /* main.m in Sources */,
+				0850C4FD22B4F45400A57A4E /* TYPerson.mm in Sources */,
 				081BFCEC22A8C5FB00F7A3C6 /* TYAppDelegate.m in Sources */,
+				0850C50D22B7390300A57A4E /* TYGuidanceVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
