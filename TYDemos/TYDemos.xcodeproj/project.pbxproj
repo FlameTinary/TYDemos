@@ -22,6 +22,7 @@
 		0850C50F22B7399100A57A4E /* guidanceImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0850C50E22B7399100A57A4E /* guidanceImages.xcassets */; };
 		0850C51122B7443700A57A4E /* guidanceVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0850C51022B7443700A57A4E /* guidanceVideo.mp4 */; };
 		0850C51322B7477E00A57A4E /* guidanceHTML.html in Resources */ = {isa = PBXBuildFile; fileRef = 0850C51222B7477E00A57A4E /* guidanceHTML.html */; };
+		0850C51622B7839300A57A4E /* TYGuidanceVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0850C51522B7839300A57A4E /* TYGuidanceVideoView.m */; };
 		0896C8E522B49362005E35E4 /* HomePageData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0896C8E422B49362005E35E4 /* HomePageData.plist */; };
 		1124A599EEB30F1BFD7D62B6 /* libPods-TYDemos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E940AC1CB78B306686C3CF /* libPods-TYDemos.a */; };
 /* End PBXBuildFile section */
@@ -58,6 +59,8 @@
 		0850C50E22B7399100A57A4E /* guidanceImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = guidanceImages.xcassets; sourceTree = "<group>"; };
 		0850C51022B7443700A57A4E /* guidanceVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = guidanceVideo.mp4; sourceTree = "<group>"; };
 		0850C51222B7477E00A57A4E /* guidanceHTML.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = guidanceHTML.html; sourceTree = "<group>"; };
+		0850C51422B7839300A57A4E /* TYGuidanceVideoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYGuidanceVideoView.h; sourceTree = "<group>"; };
+		0850C51522B7839300A57A4E /* TYGuidanceVideoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYGuidanceVideoView.m; sourceTree = "<group>"; };
 		0896C8E422B49362005E35E4 /* HomePageData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = HomePageData.plist; sourceTree = "<group>"; };
 		721D96288B15E29F2CE781C7 /* Pods-TYDemos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYDemos.release.xcconfig"; path = "Target Support Files/Pods-TYDemos/Pods-TYDemos.release.xcconfig"; sourceTree = "<group>"; };
 		91E940AC1CB78B306686C3CF /* libPods-TYDemos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TYDemos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -194,6 +197,8 @@
 		0850C50922B7386700A57A4E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0850C51422B7839300A57A4E /* TYGuidanceVideoView.h */,
+				0850C51522B7839300A57A4E /* TYGuidanceVideoView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -376,6 +381,7 @@
 				0850C50522B4F60600A57A4E /* TYStudent.mm in Sources */,
 				0850C4F922B49EEB00A57A4E /* TYWCDBStartVC.m in Sources */,
 				081BFCFA22A8C5FD00F7A3C6 /* main.m in Sources */,
+				0850C51622B7839300A57A4E /* TYGuidanceVideoView.m in Sources */,
 				0850C4FD22B4F45400A57A4E /* TYPerson.mm in Sources */,
 				081BFCEC22A8C5FB00F7A3C6 /* TYAppDelegate.m in Sources */,
 				0850C50D22B7390300A57A4E /* TYGuidanceVC.m in Sources */,

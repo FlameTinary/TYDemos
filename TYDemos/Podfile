@@ -9,5 +9,6 @@ target 'TYDemos' do
   pod 'YYText'
   pod 'YYModel'
   pod 'WCDB'
+  pod 'Masonry'
 
 end

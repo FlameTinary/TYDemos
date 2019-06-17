@@ -7,12 +7,14 @@
 //
 
 #import "TYGuidanceVC.h"
+#import "TYGuidanceVideoView.h"
 
 @interface TYGuidanceVC ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *guidanceImageView;
 @property (strong, nonatomic) IBOutlet UITapGestureRecognizer *guidanceTap;
-@property (weak, nonatomic) IBOutlet UIWebView *guidanceWebView;
+
+@property(nonatomic, strong) TYGuidanceVideoView * videoView;
 
 @property(nonatomic, strong) NSArray * guidanceImageArray;
 @property(nonatomic, assign) int imageCount;
@@ -33,13 +35,22 @@
     NSString * currentImageName = [self.guidanceImageView.image accessibilityIdentifier];
     NSString * lastImageName = [_guidanceImageArray lastObject];
     if ([currentImageName isEqualToString:lastImageName]) {
-        if (!_guidanceWebView.hidden) return;
-        _guidanceWebView.hidden = NO;
-        _guidanceWebView.allowsInlineMediaPlayback = YES;
+        if (_videoView) return;
+        
         NSString * guidanceVideoPath = [[NSBundle mainBundle] pathForResource:@"guidanceVideo" ofType:@"mp4"];
         NSURL *url = [NSURL fileURLWithPath:guidanceVideoPath];
-        NSURLRequest * request = [NSURLRequest requestWithURL:url];
-        [_guidanceWebView loadRequest:request];
+        
+        _videoView = [[TYGuidanceVideoView alloc] initWithUrl:url];
+//        _videoView.frame = CGRectMake(0, 0, 200, 400);
+        [self.view addSubview:_videoView];
+        
+        [_videoView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.mas_equalTo(200);
+            make.bottom.mas_equalTo(-200);
+            make.left.mas_equalTo(80);
+            make.right.mas_equalTo(-80);
+        }];
+        
         return;
     };
     
