@@ -28,6 +28,7 @@
     // Do any additional setup after loading the view.
     _guidanceImageArray = @[@"guidance_1", @"guidance_2", @"guidance_3"];
     _guidanceImageView.image = [UIImage imageNamed:_guidanceImageArray[0]];
+    [_guidanceImageView.image setAccessibilityIdentifier:_guidanceImageArray[0]];
 }
 
 - (IBAction)guidanceTapClick:(UITapGestureRecognizer *)sender {
@@ -62,6 +63,7 @@
 //    NSLog(@"点击了(x: %lf, y: %lf)", point.x, point.y);
     if (point.x > 100 && point.x < 300 && point.y > 100 && point.y < 200) { // 判断是否在点击范围之内
         self.guidanceImageView.image = [UIImage imageNamed:_guidanceImageArray[currentImageIndex + 1]];
+        [self.guidanceImageView.image setAccessibilityIdentifier:_guidanceImageArray[currentImageIndex + 1]];
     }
     
 }

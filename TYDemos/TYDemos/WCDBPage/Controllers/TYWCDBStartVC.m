@@ -8,40 +8,82 @@
 
 #import "TYWCDBStartVC.h"
 
+#define TY_TABLE_CONTENT_NAME @"TY_TABLE_CONTENT_NAME"
+
 @interface TYWCDBStartVC ()
+
+@property(nonatomic, strong) NSArray * oprationArray;
 
 @end
 
 @implementation TYWCDBStartVC
 
+static NSString * cellID = @"operationCellID";
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    //self.title = @"WCDB";
+    _oprationArray = @[@"创建数据库", @"创建表", @"添加单条数据", @"添加多条数据", @"修改单条数据", @"修改多条数据", @"删除单条数据", @"删除多条数据"];
 }
 
 #pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return _oprationArray.count;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
+    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+    cell.textLabel.text = _oprationArray[indexPath.row];
     return cell;
 }
-*/
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    SEL sel = NSSelectorFromString(@"createDataBase");
+    
+    IMP imp = [self methodForSelector:sel];
+    
+    void(*func)(id, SEL) = (void *)imp;
+    
+    func(self, sel);
+    
+    
+//    if ([self respondsToSelector:sel]) {
+//        [self performSelector:sel];
+//    }
+}
+
+
+- (void)createDataBase {
+    NSLog(@"点击了createDataBase方法");
+}
+
+- (void)createTable {
+    
+}
+
+- (void)addSingleData {
+    
+}
+
+- (void)addDataWithArray {
+    
+}
+
+- (void)updateSingleData {
+    
+}
+
+- (void)updateDataWithArray {
+    
+}
+
+- (void)deleteSingleData {
+    
+}
+
+- (void)deleteDataWithArray {
+    
+}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
