@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>创建数据库</string>
+		<key>select</key>
+		<string>createDataBase</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>创建表</string>
+		<key>select</key>
+		<string>createTable</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>添加单条数据</string>
+		<key>select</key>
+		<string>addSingleData</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>添加多条数据</string>
+		<key>select</key>
+		<string>addDataWithArray</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>修改单条数据</string>
+		<key>select</key>
+		<string>updateSingleData</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>修改多条数据</string>
+		<key>select</key>
+		<string>updateDataWithArray</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>删除单条数据</string>
+		<key>select</key>
+		<string>deleteSingleData</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>删除多条数据</string>
+		<key>select</key>
+		<string>deleteDataWithArray</string>
+	</dict>
+</array>
+</plist>

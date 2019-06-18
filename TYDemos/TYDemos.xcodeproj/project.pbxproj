@@ -24,6 +24,8 @@
 		0850C51322B7477E00A57A4E /* guidanceHTML.html in Resources */ = {isa = PBXBuildFile; fileRef = 0850C51222B7477E00A57A4E /* guidanceHTML.html */; };
 		0850C51622B7839300A57A4E /* TYGuidanceVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0850C51522B7839300A57A4E /* TYGuidanceVideoView.m */; };
 		0850C51A22B8D0AE00A57A4E /* TYDBOperation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0850C51922B8D0AE00A57A4E /* TYDBOperation.mm */; };
+		0850C51D22B8F31900A57A4E /* TYWCDBStartVCData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0850C51C22B8F31900A57A4E /* TYWCDBStartVCData.plist */; };
+		0850C52022B8F57000A57A4E /* TYWCDBStartModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0850C51F22B8F57000A57A4E /* TYWCDBStartModel.m */; };
 		0896C8E522B49362005E35E4 /* HomePageData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0896C8E422B49362005E35E4 /* HomePageData.plist */; };
 		1124A599EEB30F1BFD7D62B6 /* libPods-TYDemos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E940AC1CB78B306686C3CF /* libPods-TYDemos.a */; };
 /* End PBXBuildFile section */
@@ -64,6 +66,9 @@
 		0850C51522B7839300A57A4E /* TYGuidanceVideoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYGuidanceVideoView.m; sourceTree = "<group>"; };
 		0850C51822B8D0AE00A57A4E /* TYDBOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYDBOperation.h; sourceTree = "<group>"; };
 		0850C51922B8D0AE00A57A4E /* TYDBOperation.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TYDBOperation.mm; sourceTree = "<group>"; };
+		0850C51C22B8F31900A57A4E /* TYWCDBStartVCData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TYWCDBStartVCData.plist; sourceTree = "<group>"; };
+		0850C51E22B8F57000A57A4E /* TYWCDBStartModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYWCDBStartModel.h; sourceTree = "<group>"; };
+		0850C51F22B8F57000A57A4E /* TYWCDBStartModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYWCDBStartModel.m; sourceTree = "<group>"; };
 		0896C8E422B49362005E35E4 /* HomePageData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = HomePageData.plist; sourceTree = "<group>"; };
 		721D96288B15E29F2CE781C7 /* Pods-TYDemos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYDemos.release.xcconfig"; path = "Target Support Files/Pods-TYDemos/Pods-TYDemos.release.xcconfig"; sourceTree = "<group>"; };
 		91E940AC1CB78B306686C3CF /* libPods-TYDemos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TYDemos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,6 +138,7 @@
 		0850C4F322B49E7900A57A4E /* WCDBPage */ = {
 			isa = PBXGroup;
 			children = (
+				0850C51B22B8F2C900A57A4E /* Others */,
 				0850C51722B8D06B00A57A4E /* Operation */,
 				0850C4F622B49EB900A57A4E /* Views */,
 				0850C4F522B49EA600A57A4E /* Models */,
@@ -159,6 +165,8 @@
 				0850C50422B4F60600A57A4E /* TYStudent.h */,
 				0850C50222B4F60600A57A4E /* TYStudent.mm */,
 				0850C50322B4F60600A57A4E /* TYStudent+WCTTableCoding.h */,
+				0850C51E22B8F57000A57A4E /* TYWCDBStartModel.h */,
+				0850C51F22B8F57000A57A4E /* TYWCDBStartModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -223,6 +231,14 @@
 				0850C51922B8D0AE00A57A4E /* TYDBOperation.mm */,
 			);
 			path = Operation;
+			sourceTree = "<group>";
+		};
+		0850C51B22B8F2C900A57A4E /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				0850C51C22B8F31900A57A4E /* TYWCDBStartVCData.plist */,
+			);
+			path = Others;
 			sourceTree = "<group>";
 		};
 		0896C8DF22B49298005E35E4 /* HomePage */ = {
@@ -347,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0896C8E522B49362005E35E4 /* HomePageData.plist in Resources */,
+				0850C51D22B8F31900A57A4E /* TYWCDBStartVCData.plist in Resources */,
 				0850C51322B7477E00A57A4E /* guidanceHTML.html in Resources */,
 				0815119C22B200BD005537B7 /* DebugConfig.xcconfig in Resources */,
 				081BFCF722A8C5FD00F7A3C6 /* LaunchScreen.storyboard in Resources */,
@@ -392,6 +409,7 @@
 				0850C51A22B8D0AE00A57A4E /* TYDBOperation.mm in Sources */,
 				081BFCEF22A8C5FB00F7A3C6 /* TYStartPageController.m in Sources */,
 				0850C4F222B497BB00A57A4E /* TYHomeDataModel.m in Sources */,
+				0850C52022B8F57000A57A4E /* TYWCDBStartModel.m in Sources */,
 				0850C50522B4F60600A57A4E /* TYStudent.mm in Sources */,
 				0850C4F922B49EEB00A57A4E /* TYWCDBStartVC.m in Sources */,
 				081BFCFA22A8C5FD00F7A3C6 /* main.m in Sources */,

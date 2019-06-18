@@ -7,12 +7,13 @@
 //
 
 #import "TYWCDBStartVC.h"
+#import "TYWCDBStartModel.h"
 
 #define TY_TABLE_CONTENT_NAME @"TY_TABLE_CONTENT_NAME"
 
 @interface TYWCDBStartVC ()
 
-@property(nonatomic, strong) NSArray * oprationArray;
+@property(nonatomic, strong) NSArray<TYWCDBStartModel *> * oprationArray;
 
 @end
 
@@ -22,7 +23,7 @@ static NSString * cellID = @"operationCellID";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _oprationArray = @[@"创建数据库", @"创建表", @"添加单条数据", @"添加多条数据", @"修改单条数据", @"修改多条数据", @"删除单条数据", @"删除多条数据"];
+    _oprationArray = [self getDataFromPlist];
 }
 
 #pragma mark - Table view data source
@@ -33,12 +34,16 @@ static NSString * cellID = @"operationCellID";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:cellID];
-    cell.textLabel.text = _oprationArray[indexPath.row];
+    TYWCDBStartModel * model = _oprationArray[indexPath.row];
+    cell.textLabel.text = model.title;
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    SEL sel = NSSelectorFromString(@"createDataBase");
+    
+    TYWCDBStartModel * model = _oprationArray[indexPath.row];
+    
+    SEL sel = NSSelectorFromString(model.select);
     
     IMP imp = [self methodForSelector:sel];
     
@@ -83,6 +88,13 @@ static NSString * cellID = @"operationCellID";
 
 - (void)deleteDataWithArray {
     
+}
+
+- (NSArray<TYWCDBStartModel *> *)getDataFromPlist {
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"TYWCDBStartVCData" ofType:@"plist"];
+    NSArray *array = [NSArray arrayWithContentsOfFile:plistPath];
+    NSArray<TYWCDBStartModel *> *dataArray = [NSArray yy_modelArrayWithClass:TYWCDBStartModel.class json:array];
+    return dataArray;
 }
 /*
 // Override to support conditional editing of the table view.
