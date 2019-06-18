@@ -49,7 +49,7 @@
     return self;
 }
 
-//监听回调
+#pragma mark - 监听回调
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context
 {
     AVPlayerItem *playerItem = (AVPlayerItem *)object;
@@ -72,7 +72,7 @@
     _exitBtn.hidden = NO;
 }
 
-// Override UIView method
+#pragma mark - Override UIView method
 + (Class)layerClass {
     return [AVPlayerLayer class];
 }
@@ -102,7 +102,9 @@
 }
 
 - (void)exitBtnClick {
-    
+    if (self.delegate && [self.delegate respondsToSelector:@selector(guidanceDidEnd)]) {
+        [self.delegate guidanceDidEnd];
+    }
 }
 
 

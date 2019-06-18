@@ -11,9 +11,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol TYGuidanceVideoViewDelegate <NSObject>
+
+- (void)guidanceDidEnd;
+
+@end
+
 @interface TYGuidanceVideoView : UIView
 
-//@property(nonatomic, strong) AVPlayer *player;
+@property(nonatomic, assign)id<TYGuidanceVideoViewDelegate> delegate;
 
 - (instancetype)initWithUrl:(NSURL *)url;
 

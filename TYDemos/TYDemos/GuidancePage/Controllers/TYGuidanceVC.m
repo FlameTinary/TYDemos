@@ -9,7 +9,7 @@
 #import "TYGuidanceVC.h"
 #import "TYGuidanceVideoView.h"
 
-@interface TYGuidanceVC ()
+@interface TYGuidanceVC ()<TYGuidanceVideoViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *guidanceImageView;
 @property (strong, nonatomic) IBOutlet UITapGestureRecognizer *guidanceTap;
@@ -41,6 +41,7 @@
         NSURL *url = [NSURL fileURLWithPath:guidanceVideoPath];
         
         _videoView = [[TYGuidanceVideoView alloc] initWithUrl:url];
+        _videoView.delegate = self;
 //        _videoView.frame = CGRectMake(0, 0, 200, 400);
         [self.view addSubview:_videoView];
         
@@ -65,6 +66,11 @@
     
 }
 
+
+#pragma mark - TYGuidanceVideoViewDelegate
+- (void)guidanceDidEnd {
+    [self dismissViewControllerAnimated:NO completion:nil];
+}
 /*
 #pragma mark - Navigation
 

@@ -26,7 +26,7 @@
                     <navigationItem key="navigationItem" title="首页" id="SRd-at-odT"/>
                     <connections>
                         <segue destination="oLz-qi-JRg" kind="show" identifier="showWCDBDemo" id="25o-ZG-pps"/>
-                        <segue destination="8Nr-w0-tWC" kind="show" identifier="showGuidancePage" id="MvL-B7-lPI"/>
+                        <segue destination="8Nr-w0-tWC" kind="showDetail" identifier="showGuidancePage" animates="NO" id="MvL-B7-lPI"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OUf-7K-scc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -42,7 +42,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guidance_1" translatesAutoresizingMaskIntoConstraints="NO" id="VFV-Ae-68c">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="NKd-er-FFv" appends="YES" id="7a8-FW-vhW"/>
