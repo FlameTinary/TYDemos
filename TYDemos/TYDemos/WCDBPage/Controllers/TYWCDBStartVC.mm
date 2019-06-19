@@ -49,37 +49,97 @@ static NSString * cellID = @"operationCellID";
 
 #pragma mark - database method
 - (void)dataBaseActionWithModel:(TYWCDBStartModel *)model {
+    NSString *tipString = @"";
+    BOOL isSuccess = NO;
     TYDBService *service = [[TYDBService alloc] initWithTableName:TY_TABLE_MESSAGE_NAME class:TYPerson.class];
     switch ([model.select integerValue]) {
-        case 0:
+        case 0:// 添加单条数据
             {
                 TYPerson *person = [[TYPerson alloc] init];
                 person.name = @"Sheldon";
                 person.age = 28;
                 person.gender = TYUserGenderTypeMale;
-                [service.operation insertObject:person into:TY_TABLE_MESSAGE_NAME];
+                isSuccess = [service.operation insertObject:person into:TY_TABLE_MESSAGE_NAME];
+                
+                if (isSuccess) {
+                    tipString = @"添加成功";
+                } else {
+                    tipString = @"添加失败";
+                }
             }
             break;
-        case 1:
+        case 1:// 添加多条数据
         {
             NSString *personDataPath = [[NSBundle mainBundle] pathForResource:@"PersonData" ofType:@"plist"];
             NSArray *listArray = [NSArray arrayWithContentsOfFile:personDataPath];
             NSArray<TYPerson *> *personArray = [NSArray yy_modelArrayWithClass:TYPerson.class json:listArray];
-            [service.operation insertObjects:personArray into:TY_TABLE_MESSAGE_NAME];
+            isSuccess = [service.operation insertObjects:personArray into:TY_TABLE_MESSAGE_NAME];
+            
+            if (isSuccess) {
+                tipString = @"添加成功";
+            } else {
+                tipString = @"添加失败";
+            }
+            
         }
             break;
-        case 2:
+        case 2:// 修改单条数据
         {
             TYPerson *person = [[TYPerson alloc] init];
             person.name = @"Sheldon";
             person.age = 30;
             person.gender = TYUserGenderTypeMale;
-            //[service.operation.database updateRowsInTable:TY_TABLE_MESSAGE_NAME onProperty:TYPerson.age withObject:person where:<#(const WCTCondition &)#>];
+            isSuccess = [service.operation.database updateRowsInTable:TY_TABLE_MESSAGE_NAME onProperty:TYPerson.age withObject:person where:TYPerson.localID==1];
+            
+            if (isSuccess) {
+                tipString = @"修改成功";
+            } else {
+                tipString = @"修改失败";
+            }
+        }
+            break;
+        case 3:// 修改多条数据
+        {
+            TYPerson *person = [[TYPerson alloc] init];
+            person.name = @"Sheldon";
+            person.age = 30;
+            person.gender = TYUserGenderTypeMale;
+            isSuccess = [service.operation.database updateRowsInTable:TY_TABLE_MESSAGE_NAME onProperty:TYPerson.age withObject:person where:TYPerson.age > 70];
+            if (isSuccess) {
+                tipString = @"修改成功";
+            } else {
+                tipString = @"修改失败";
+            }
+        }
+            break;
+        case 4:// 删除单条数据
+        {
+            isSuccess = [service.operation.database deleteObjectsFromTable:TY_TABLE_MESSAGE_NAME where:TYPerson.localID==3];
+            if (isSuccess) {
+                tipString = @"删除成功";
+            } else {
+                tipString = @"删除失败";
+            }
+        }
+            break;
+        case 5:// 删除多条数据
+        {
+            isSuccess = [service.operation.database deleteObjectsFromTable:TY_TABLE_MESSAGE_NAME where:TYPerson.localID<5];
+            if (isSuccess) {
+                tipString = @"删除成功";
+            } else {
+                tipString = @"删除失败";
+            }
         }
             break;
         default:
             break;
     }
+    
+    UIAlertController * alertCtr = [UIAlertController alertControllerWithTitle:tipString message:tipString preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *sureAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:nil];
+    [alertCtr addAction:sureAction];
+    [self presentViewController:alertCtr animated:YES completion:nil];
 }
 
 - (NSArray<TYWCDBStartModel *> *)getDataFromPlist {
