@@ -15,7 +15,7 @@
 		081BFCF722A8C5FD00F7A3C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 081BFCF522A8C5FD00F7A3C6 /* LaunchScreen.storyboard */; };
 		081BFCFA22A8C5FD00F7A3C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 081BFCF922A8C5FD00F7A3C6 /* main.m */; };
 		0850C4F222B497BB00A57A4E /* TYHomeDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0850C4F122B497BB00A57A4E /* TYHomeDataModel.m */; };
-		0850C4F922B49EEB00A57A4E /* TYWCDBStartVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0850C4F822B49EEB00A57A4E /* TYWCDBStartVC.m */; };
+		0850C4F922B49EEB00A57A4E /* TYWCDBStartVC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0850C4F822B49EEB00A57A4E /* TYWCDBStartVC.mm */; };
 		0850C4FD22B4F45400A57A4E /* TYPerson.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0850C4FA22B4F45400A57A4E /* TYPerson.mm */; };
 		0850C50522B4F60600A57A4E /* TYStudent.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0850C50222B4F60600A57A4E /* TYStudent.mm */; };
 		0850C50D22B7390300A57A4E /* TYGuidanceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0850C50C22B7390300A57A4E /* TYGuidanceVC.m */; };
@@ -26,7 +26,9 @@
 		0850C51A22B8D0AE00A57A4E /* TYDBOperation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0850C51922B8D0AE00A57A4E /* TYDBOperation.mm */; };
 		0850C51D22B8F31900A57A4E /* TYWCDBStartVCData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0850C51C22B8F31900A57A4E /* TYWCDBStartVCData.plist */; };
 		0850C52022B8F57000A57A4E /* TYWCDBStartModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0850C51F22B8F57000A57A4E /* TYWCDBStartModel.m */; };
+		0850C52322B9DA4200A57A4E /* TYDBService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0850C52222B9DA4200A57A4E /* TYDBService.m */; };
 		0896C8E522B49362005E35E4 /* HomePageData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0896C8E422B49362005E35E4 /* HomePageData.plist */; };
+		08E3AF8F22B9E610005A77A0 /* PersonData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 08E3AF8E22B9E610005A77A0 /* PersonData.plist */; };
 		1124A599EEB30F1BFD7D62B6 /* libPods-TYDemos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E940AC1CB78B306686C3CF /* libPods-TYDemos.a */; };
 /* End PBXBuildFile section */
 
@@ -50,7 +52,7 @@
 		0850C4F022B497BB00A57A4E /* TYHomeDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYHomeDataModel.h; sourceTree = "<group>"; };
 		0850C4F122B497BB00A57A4E /* TYHomeDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYHomeDataModel.m; sourceTree = "<group>"; };
 		0850C4F722B49EEB00A57A4E /* TYWCDBStartVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYWCDBStartVC.h; sourceTree = "<group>"; };
-		0850C4F822B49EEB00A57A4E /* TYWCDBStartVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYWCDBStartVC.m; sourceTree = "<group>"; };
+		0850C4F822B49EEB00A57A4E /* TYWCDBStartVC.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TYWCDBStartVC.mm; sourceTree = "<group>"; };
 		0850C4FA22B4F45400A57A4E /* TYPerson.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TYPerson.mm; sourceTree = "<group>"; };
 		0850C4FB22B4F45400A57A4E /* TYPerson+WCTTableCoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TYPerson+WCTTableCoding.h"; sourceTree = "<group>"; };
 		0850C4FC22B4F45400A57A4E /* TYPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYPerson.h; sourceTree = "<group>"; };
@@ -69,7 +71,10 @@
 		0850C51C22B8F31900A57A4E /* TYWCDBStartVCData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TYWCDBStartVCData.plist; sourceTree = "<group>"; };
 		0850C51E22B8F57000A57A4E /* TYWCDBStartModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYWCDBStartModel.h; sourceTree = "<group>"; };
 		0850C51F22B8F57000A57A4E /* TYWCDBStartModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYWCDBStartModel.m; sourceTree = "<group>"; };
+		0850C52122B9DA4200A57A4E /* TYDBService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYDBService.h; sourceTree = "<group>"; };
+		0850C52222B9DA4200A57A4E /* TYDBService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYDBService.m; sourceTree = "<group>"; };
 		0896C8E422B49362005E35E4 /* HomePageData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = HomePageData.plist; sourceTree = "<group>"; };
+		08E3AF8E22B9E610005A77A0 /* PersonData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PersonData.plist; sourceTree = "<group>"; };
 		721D96288B15E29F2CE781C7 /* Pods-TYDemos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYDemos.release.xcconfig"; path = "Target Support Files/Pods-TYDemos/Pods-TYDemos.release.xcconfig"; sourceTree = "<group>"; };
 		91E940AC1CB78B306686C3CF /* libPods-TYDemos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TYDemos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC06E919494F28AF15753DD2 /* Pods-TYDemos.xcconfigtest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYDemos.xcconfigtest.xcconfig"; path = "Target Support Files/Pods-TYDemos/Pods-TYDemos.xcconfigtest.xcconfig"; sourceTree = "<group>"; };
@@ -151,7 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				0850C4F722B49EEB00A57A4E /* TYWCDBStartVC.h */,
-				0850C4F822B49EEB00A57A4E /* TYWCDBStartVC.m */,
+				0850C4F822B49EEB00A57A4E /* TYWCDBStartVC.mm */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -229,6 +234,8 @@
 			children = (
 				0850C51822B8D0AE00A57A4E /* TYDBOperation.h */,
 				0850C51922B8D0AE00A57A4E /* TYDBOperation.mm */,
+				0850C52122B9DA4200A57A4E /* TYDBService.h */,
+				0850C52222B9DA4200A57A4E /* TYDBService.m */,
 			);
 			path = Operation;
 			sourceTree = "<group>";
@@ -237,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				0850C51C22B8F31900A57A4E /* TYWCDBStartVCData.plist */,
+				08E3AF8E22B9E610005A77A0 /* PersonData.plist */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -371,6 +379,7 @@
 				081BFCF422A8C5FD00F7A3C6 /* Assets.xcassets in Resources */,
 				0850C50F22B7399100A57A4E /* guidanceImages.xcassets in Resources */,
 				081BFCF222A8C5FB00F7A3C6 /* Main.storyboard in Resources */,
+				08E3AF8F22B9E610005A77A0 /* PersonData.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,8 +419,9 @@
 				081BFCEF22A8C5FB00F7A3C6 /* TYStartPageController.m in Sources */,
 				0850C4F222B497BB00A57A4E /* TYHomeDataModel.m in Sources */,
 				0850C52022B8F57000A57A4E /* TYWCDBStartModel.m in Sources */,
+				0850C52322B9DA4200A57A4E /* TYDBService.m in Sources */,
 				0850C50522B4F60600A57A4E /* TYStudent.mm in Sources */,
-				0850C4F922B49EEB00A57A4E /* TYWCDBStartVC.m in Sources */,
+				0850C4F922B49EEB00A57A4E /* TYWCDBStartVC.mm in Sources */,
 				081BFCFA22A8C5FD00F7A3C6 /* main.m in Sources */,
 				0850C51622B7839300A57A4E /* TYGuidanceVideoView.m in Sources */,
 				0850C4FD22B4F45400A57A4E /* TYPerson.mm in Sources */,

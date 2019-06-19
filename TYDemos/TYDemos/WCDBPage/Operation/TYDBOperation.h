@@ -21,6 +21,8 @@ typedef void(^TransactionBlock)();
 
 @property (nonatomic, strong, readonly) WCTDatabase *database;
 
+- initWithDataName:(NSString *)dataName;
+
 #pragma mark - others
 // 表是否存在
 - (BOOL)isTableExists:(NSString *)tableName;

@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface TYWCDBStartModel : NSObject
 
 @property(nonatomic, copy) NSString * title;
-@property(nonatomic, copy) NSString * select;
+@property(nonatomic, strong) NSNumber * select;
 
 @end
 

@@ -4,51 +4,39 @@
 <array>
 	<dict>
 		<key>title</key>
-		<string>创建数据库</string>
-		<key>select</key>
-		<string>createDataBase</string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>创建表</string>
-		<key>select</key>
-		<string>createTable</string>
-	</dict>
-	<dict>
-		<key>title</key>
 		<string>添加单条数据</string>
 		<key>select</key>
-		<string>addSingleData</string>
+		<integer>0</integer>
 	</dict>
 	<dict>
 		<key>title</key>
 		<string>添加多条数据</string>
 		<key>select</key>
-		<string>addDataWithArray</string>
+		<integer>1</integer>
 	</dict>
 	<dict>
 		<key>title</key>
 		<string>修改单条数据</string>
 		<key>select</key>
-		<string>updateSingleData</string>
+		<integer>2</integer>
 	</dict>
 	<dict>
 		<key>title</key>
 		<string>修改多条数据</string>
 		<key>select</key>
-		<string>updateDataWithArray</string>
+		<integer>3</integer>
 	</dict>
 	<dict>
 		<key>title</key>
 		<string>删除单条数据</string>
 		<key>select</key>
-		<string>deleteSingleData</string>
+		<integer>4</integer>
 	</dict>
 	<dict>
 		<key>title</key>
 		<string>删除多条数据</string>
 		<key>select</key>
-		<string>deleteDataWithArray</string>
+		<integer>5</integer>
 	</dict>
 </array>
 </plist>

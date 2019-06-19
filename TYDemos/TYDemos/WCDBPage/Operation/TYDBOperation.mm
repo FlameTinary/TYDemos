@@ -21,6 +21,16 @@
 
 @implementation TYDBOperation
 
+- initWithDataName:(NSString *)dataName {
+    self = [super init];
+    if (self) {
+        NSString * dbPath = [PATH_OF_DOCUMENT stringByAppendingPathComponent:dataName];
+        NSLog(@"database path: %@", dbPath);
+        self.database = [[WCTDatabase alloc] initWithPath:dbPath];
+    }
+    return self;
+}
+
 #pragma mark - others
 - (BOOL)isTableExists:(NSString *)tableName {
     return [self.database isTableExists:tableName];
@@ -38,15 +48,6 @@
         NSLog(@"Error: table name: %@ format error.", tableName);
         return NO;
     }
-    NSString * dbPath = [PATH_OF_DOCUMENT stringByAppendingPathComponent:@"ampleDB.db"];
-    NSLog(@"database path: %@", dbPath);
-    
-    //    WCTDatabase* database1 = [[WCTDatabase alloc] initWithPath:dbPath];
-    //    WCTDatabase* database2 = [[WCTDatabase alloc] initWithPath:dbPath];
-    //    database1.tag = 1;
-    //    NSLog(@"%d", database2.tag);//print 1
-    
-    self.database = [[WCTDatabase alloc] initWithPath:dbPath];
     return [self.database createTableAndIndexesOfName:tableName withClass:cls];
 }
 

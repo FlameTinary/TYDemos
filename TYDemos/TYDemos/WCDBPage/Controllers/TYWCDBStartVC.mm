@@ -8,7 +8,10 @@
 
 #import "TYWCDBStartVC.h"
 #import "TYWCDBStartModel.h"
+#import "TYDBservice.h"
+#import "TYPerson+WCTTableCoding.h"
 
+#define TY_TABLE_MESSAGE_NAME @"TY_TABLE_MESSAGE_NAME"
 #define TY_TABLE_CONTENT_NAME @"TY_TABLE_CONTENT_NAME"
 
 @interface TYWCDBStartVC ()
@@ -40,54 +43,43 @@ static NSString * cellID = @"operationCellID";
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    TYWCDBStartModel * model = _oprationArray[indexPath.row];
-    
-    SEL sel = NSSelectorFromString(model.select);
-    
-    IMP imp = [self methodForSelector:sel];
-    
-    void(*func)(id, SEL) = (void *)imp;
-    
-    func(self, sel);
-    
-    
-//    if ([self respondsToSelector:sel]) {
-//        [self performSelector:sel];
-//    }
+    [self dataBaseActionWithModel:_oprationArray[indexPath.row]];
 }
 
 
-- (void)createDataBase {
-    NSLog(@"点击了createDataBase方法");
-}
-
-- (void)createTable {
-    
-}
-
-- (void)addSingleData {
-    
-}
-
-- (void)addDataWithArray {
-    
-}
-
-- (void)updateSingleData {
-    
-}
-
-- (void)updateDataWithArray {
-    
-}
-
-- (void)deleteSingleData {
-    
-}
-
-- (void)deleteDataWithArray {
-    
+#pragma mark - database method
+- (void)dataBaseActionWithModel:(TYWCDBStartModel *)model {
+    TYDBService *service = [[TYDBService alloc] initWithTableName:TY_TABLE_MESSAGE_NAME class:TYPerson.class];
+    switch ([model.select integerValue]) {
+        case 0:
+            {
+                TYPerson *person = [[TYPerson alloc] init];
+                person.name = @"Sheldon";
+                person.age = 28;
+                person.gender = TYUserGenderTypeMale;
+                [service.operation insertObject:person into:TY_TABLE_MESSAGE_NAME];
+            }
+            break;
+        case 1:
+        {
+            NSString *personDataPath = [[NSBundle mainBundle] pathForResource:@"PersonData" ofType:@"plist"];
+            NSArray *listArray = [NSArray arrayWithContentsOfFile:personDataPath];
+            NSArray<TYPerson *> *personArray = [NSArray yy_modelArrayWithClass:TYPerson.class json:listArray];
+            [service.operation insertObjects:personArray into:TY_TABLE_MESSAGE_NAME];
+        }
+            break;
+        case 2:
+        {
+            TYPerson *person = [[TYPerson alloc] init];
+            person.name = @"Sheldon";
+            person.age = 30;
+            person.gender = TYUserGenderTypeMale;
+            //[service.operation.database updateRowsInTable:TY_TABLE_MESSAGE_NAME onProperty:TYPerson.age withObject:person where:<#(const WCTCondition &)#>];
+        }
+            break;
+        default:
+            break;
+    }
 }
 
 - (NSArray<TYWCDBStartModel *> *)getDataFromPlist {
