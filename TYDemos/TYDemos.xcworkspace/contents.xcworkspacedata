@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:OtherProjects/TYAVPlayerDemo/TYAVPlayerDemo.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:OtherProjects/TYToolSet/TYToolSet.xcodeproj">
    </FileRef>
    <FileRef
