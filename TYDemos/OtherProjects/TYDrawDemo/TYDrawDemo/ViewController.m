@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TYBezierDrawView.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    TYBezierDrawView * bezierView = [[TYBezierDrawView alloc] initWithFrame:CGRectMake(100, 100, 200, 200)];
+    [self.view addSubview:bezierView];
+    
 }
 
 
