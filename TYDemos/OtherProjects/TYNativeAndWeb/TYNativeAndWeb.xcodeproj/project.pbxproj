@@ -19,6 +19,7 @@
 		08875B032252335F008A2F33 /* TYTest.html in Resources */ = {isa = PBXBuildFile; fileRef = 08875B002252335E008A2F33 /* TYTest.html */; };
 		08875B042252335F008A2F33 /* TYTest.js in Resources */ = {isa = PBXBuildFile; fileRef = 08875B012252335E008A2F33 /* TYTest.js */; };
 		08875B052252335F008A2F33 /* TYTest.css in Resources */ = {isa = PBXBuildFile; fileRef = 08875B022252335F008A2F33 /* TYTest.css */; };
+		285F1B744E25AC31CC2718D9 /* Pods_TYNativeAndWeb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 132774C6CCD9B819B163331A /* Pods_TYNativeAndWeb.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,9 @@
 		08875B002252335E008A2F33 /* TYTest.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = TYTest.html; sourceTree = "<group>"; };
 		08875B012252335E008A2F33 /* TYTest.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = TYTest.js; sourceTree = "<group>"; };
 		08875B022252335F008A2F33 /* TYTest.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = TYTest.css; sourceTree = "<group>"; };
+		132774C6CCD9B819B163331A /* Pods_TYNativeAndWeb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TYNativeAndWeb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83F82324F4B6E14E40B4DDB5 /* Pods-TYNativeAndWeb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYNativeAndWeb.release.xcconfig"; path = "Target Support Files/Pods-TYNativeAndWeb/Pods-TYNativeAndWeb.release.xcconfig"; sourceTree = "<group>"; };
+		9976B779C6FA900003D6CD1A /* Pods-TYNativeAndWeb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYNativeAndWeb.debug.xcconfig"; path = "Target Support Files/Pods-TYNativeAndWeb/Pods-TYNativeAndWeb.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				285F1B744E25AC31CC2718D9 /* Pods_TYNativeAndWeb.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +64,8 @@
 			children = (
 				08875AE022521D82008A2F33 /* TYNativeAndWeb */,
 				08875ADF22521D82008A2F33 /* Products */,
+				30EE8DA0E403882C61F91143 /* Pods */,
+				69A3089A0F6816F46287C120 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +110,24 @@
 			path = webFiles;
 			sourceTree = "<group>";
 		};
+		30EE8DA0E403882C61F91143 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9976B779C6FA900003D6CD1A /* Pods-TYNativeAndWeb.debug.xcconfig */,
+				83F82324F4B6E14E40B4DDB5 /* Pods-TYNativeAndWeb.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../../Pods;
+			sourceTree = "<group>";
+		};
+		69A3089A0F6816F46287C120 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				132774C6CCD9B819B163331A /* Pods_TYNativeAndWeb.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -110,9 +135,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08875AF422521D83008A2F33 /* Build configuration list for PBXNativeTarget "TYNativeAndWeb" */;
 			buildPhases = (
+				3B3D2408C03E2E628129255A /* [CP] Check Pods Manifest.lock */,
 				08875ADA22521D82008A2F33 /* Sources */,
 				08875ADB22521D82008A2F33 /* Frameworks */,
 				08875ADC22521D82008A2F33 /* Resources */,
+				C7A564AA3CD6694D7D773E77 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,6 +197,63 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B3D2408C03E2E628129255A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TYNativeAndWeb-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7A564AA3CD6694D7D773E77 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TYNativeAndWeb/Pods-TYNativeAndWeb-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Masonry-iOS12.2/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLiteRepairKit-iOS12.2/sqliterk.framework",
+				"${BUILT_PRODUCTS_DIR}/WCDB-iOS12.2/WCDB.framework",
+				"${BUILT_PRODUCTS_DIR}/WCDBOptimizedSQLCipher-iOS12.2/sqlcipher.framework",
+				"${BUILT_PRODUCTS_DIR}/YYModel-iOS12.2/YYModel.framework",
+				"${BUILT_PRODUCTS_DIR}/YYText-iOS12.2/YYText.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/sqliterk.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WCDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/sqlcipher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYText.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TYNativeAndWeb/Pods-TYNativeAndWeb-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		08875ADA22521D82008A2F33 /* Sources */ = {
@@ -321,6 +405,7 @@
 		};
 		08875AF522521D83008A2F33 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9976B779C6FA900003D6CD1A /* Pods-TYNativeAndWeb.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -338,6 +423,7 @@
 		};
 		08875AF622521D83008A2F33 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83F82324F4B6E14E40B4DDB5 /* Pods-TYNativeAndWeb.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:OtherProjects/SSVirtualLocation/SSVirtualLocation.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:OtherProjects/TYDrawDemo/TYDrawDemo.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:OtherProjects/TYAVPlayerDemo/TYAVPlayerDemo.xcodeproj">
    </FileRef>
    <FileRef
@@ -18,9 +24,6 @@
    </FileRef>
    <FileRef
       location = "group:OtherProjects/TYGameSceneDemo/TYGameSceneDemo.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:OtherProjects/SSVirtualLocation-master/SSVirtualLocation.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:OtherProjects/CPPTest/CPPTest.xcodeproj">

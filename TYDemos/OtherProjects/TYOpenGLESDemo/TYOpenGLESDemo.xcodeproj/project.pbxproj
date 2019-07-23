@@ -13,6 +13,7 @@
 		0820157122A12E8400F58A12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0820157022A12E8400F58A12 /* Assets.xcassets */; };
 		0820157422A12E8400F58A12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0820157222A12E8400F58A12 /* LaunchScreen.storyboard */; };
 		0820157722A12E8400F58A12 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0820157622A12E8400F58A12 /* main.m */; };
+		E2A2A51D54982837D1F76A1C /* Pods_TYOpenGLESDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB4E94D7577404114DC6B859 /* Pods_TYOpenGLESDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		0820157322A12E8400F58A12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0820157522A12E8400F58A12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0820157622A12E8400F58A12 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E3904129127F25C8CE3C864A /* Pods-TYOpenGLESDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYOpenGLESDemo.debug.xcconfig"; path = "Target Support Files/Pods-TYOpenGLESDemo/Pods-TYOpenGLESDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		EB4E94D7577404114DC6B859 /* Pods_TYOpenGLESDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TYOpenGLESDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F75EE5CCD7CA5150C3C1D425 /* Pods-TYOpenGLESDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYOpenGLESDemo.release.xcconfig"; path = "Target Support Files/Pods-TYOpenGLESDemo/Pods-TYOpenGLESDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2A2A51D54982837D1F76A1C /* Pods_TYOpenGLESDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				0820156622A12E8300F58A12 /* TYOpenGLESDemo */,
 				0820156522A12E8300F58A12 /* Products */,
+				0BA3AA5789DB78BAF366B99D /* Pods */,
+				9F78AE85D23588C51F37E1B1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +78,24 @@
 			path = TYOpenGLESDemo;
 			sourceTree = "<group>";
 		};
+		0BA3AA5789DB78BAF366B99D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E3904129127F25C8CE3C864A /* Pods-TYOpenGLESDemo.debug.xcconfig */,
+				F75EE5CCD7CA5150C3C1D425 /* Pods-TYOpenGLESDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../../Pods;
+			sourceTree = "<group>";
+		};
+		9F78AE85D23588C51F37E1B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB4E94D7577404114DC6B859 /* Pods_TYOpenGLESDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +103,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0820157A22A12E8400F58A12 /* Build configuration list for PBXNativeTarget "TYOpenGLESDemo" */;
 			buildPhases = (
+				C895E45689C8006B7FE5082B /* [CP] Check Pods Manifest.lock */,
 				0820156022A12E8300F58A12 /* Sources */,
 				0820156122A12E8300F58A12 /* Frameworks */,
 				0820156222A12E8300F58A12 /* Resources */,
+				8EE0954D58FDC1329B1D654D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,63 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8EE0954D58FDC1329B1D654D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TYOpenGLESDemo/Pods-TYOpenGLESDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Masonry-iOS12.2/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLiteRepairKit-iOS12.2/sqliterk.framework",
+				"${BUILT_PRODUCTS_DIR}/WCDB-iOS12.2/WCDB.framework",
+				"${BUILT_PRODUCTS_DIR}/WCDBOptimizedSQLCipher-iOS12.2/sqlcipher.framework",
+				"${BUILT_PRODUCTS_DIR}/YYModel-iOS12.2/YYModel.framework",
+				"${BUILT_PRODUCTS_DIR}/YYText-iOS12.2/YYText.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/sqliterk.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WCDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/sqlcipher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYText.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TYOpenGLESDemo/Pods-TYOpenGLESDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C895E45689C8006B7FE5082B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TYOpenGLESDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0820156022A12E8300F58A12 /* Sources */ = {
@@ -283,6 +367,7 @@
 		};
 		0820157B22A12E8400F58A12 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3904129127F25C8CE3C864A /* Pods-TYOpenGLESDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +385,7 @@
 		};
 		0820157C22A12E8400F58A12 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F75EE5CCD7CA5150C3C1D425 /* Pods-TYOpenGLESDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

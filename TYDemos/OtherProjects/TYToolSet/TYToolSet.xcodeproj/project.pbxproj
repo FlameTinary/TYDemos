@@ -39,6 +39,7 @@
 		9DB61B572160C45A00A4E897 /* TYProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB61B562160C45A00A4E897 /* TYProgress.m */; };
 		9DC62F2A2179BD3C00EC0C3D /* TYDispatchTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC62F292179BD3C00EC0C3D /* TYDispatchTimer.m */; };
 		B7460C4021B918D2001A72E5 /* TYAboutSwiftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7460C3F21B918D2001A72E5 /* TYAboutSwiftVC.swift */; };
+		E3FEFE7FE3D8D3E04D8CE226 /* Pods_TYToolSet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD3BB869C809C48742AF47F /* Pods_TYToolSet.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		088C07FD22311A6100304668 /* TYOprationDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYOprationDemoController.m; sourceTree = "<group>"; };
 		088C07FF22311E9500304668 /* TYOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYOperation.h; sourceTree = "<group>"; };
 		088C080022311E9500304668 /* TYOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYOperation.m; sourceTree = "<group>"; };
+		710239A249864FC320A593DA /* Pods-TYToolSet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYToolSet.release.xcconfig"; path = "Target Support Files/Pods-TYToolSet/Pods-TYToolSet.release.xcconfig"; sourceTree = "<group>"; };
 		9D830273216067090096B832 /* TYWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYWeakProxy.m; sourceTree = "<group>"; };
 		9D830274216067090096B832 /* TYWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYWeakProxy.h; sourceTree = "<group>"; };
 		9D9312E7206A4DDC00A3877B /* TYToolSet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TYToolSet.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,9 +104,11 @@
 		9DB61B562160C45A00A4E897 /* TYProgress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYProgress.m; sourceTree = "<group>"; };
 		9DC62F282179BD3C00EC0C3D /* TYDispatchTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYDispatchTimer.h; sourceTree = "<group>"; };
 		9DC62F292179BD3C00EC0C3D /* TYDispatchTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYDispatchTimer.m; sourceTree = "<group>"; };
+		9E22C7ADC5DF4937A725E825 /* Pods-TYToolSet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYToolSet.debug.xcconfig"; path = "Target Support Files/Pods-TYToolSet/Pods-TYToolSet.debug.xcconfig"; sourceTree = "<group>"; };
 		B7460C3C21B91829001A72E5 /* TYToolSet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TYToolSet-Bridging-Header.h"; sourceTree = "<group>"; };
 		B7460C3F21B918D2001A72E5 /* TYAboutSwiftVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYAboutSwiftVC.swift; sourceTree = "<group>"; };
 		B7BF4A1221B147C500498CD2 /* TYSingleMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYSingleMacro.h; sourceTree = "<group>"; };
+		BBD3BB869C809C48742AF47F /* Pods_TYToolSet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TYToolSet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,18 +117,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D958E5D206C894A009CFC6F /* CoreTelephony.framework in Frameworks */,
+				E3FEFE7FE3D8D3E04D8CE226 /* Pods_TYToolSet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0329BE9DA65C177482BD89D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E22C7ADC5DF4937A725E825 /* Pods-TYToolSet.debug.xcconfig */,
+				710239A249864FC320A593DA /* Pods-TYToolSet.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../../Pods;
+			sourceTree = "<group>";
+		};
 		9D9312DE206A4DDC00A3877B = {
 			isa = PBXGroup;
 			children = (
 				9D9312E9206A4DDC00A3877B /* TYToolSet */,
 				9D9312E8206A4DDC00A3877B /* Products */,
 				9D958E5B206C894A009CFC6F /* Frameworks */,
+				0329BE9DA65C177482BD89D3 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -213,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				9D958E5C206C894A009CFC6F /* CoreTelephony.framework */,
+				BBD3BB869C809C48742AF47F /* Pods_TYToolSet.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -291,9 +308,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D9312FD206A4DDC00A3877B /* Build configuration list for PBXNativeTarget "TYToolSet" */;
 			buildPhases = (
+				C9638E0805FFE12F2E7472BE /* [CP] Check Pods Manifest.lock */,
 				9D9312E3206A4DDC00A3877B /* Sources */,
 				9D9312E4206A4DDC00A3877B /* Frameworks */,
 				9D9312E5206A4DDC00A3877B /* Resources */,
+				8389CEEEEC02E72FEB4A8FBE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -351,6 +370,63 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8389CEEEEC02E72FEB4A8FBE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TYToolSet/Pods-TYToolSet-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Masonry-iOS11.2/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLiteRepairKit-iOS11.2/sqliterk.framework",
+				"${BUILT_PRODUCTS_DIR}/WCDB-iOS11.2/WCDB.framework",
+				"${BUILT_PRODUCTS_DIR}/WCDBOptimizedSQLCipher-iOS11.2/sqlcipher.framework",
+				"${BUILT_PRODUCTS_DIR}/YYModel-iOS11.2/YYModel.framework",
+				"${BUILT_PRODUCTS_DIR}/YYText-iOS11.2/YYText.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/sqliterk.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WCDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/sqlcipher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYText.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TYToolSet/Pods-TYToolSet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9638E0805FFE12F2E7472BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TYToolSet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9D9312E3206A4DDC00A3877B /* Sources */ = {
@@ -520,6 +596,7 @@
 		};
 		9D9312FE206A4DDC00A3877B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E22C7ADC5DF4937A725E825 /* Pods-TYToolSet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -539,6 +616,7 @@
 		};
 		9D9312FF206A4DDC00A3877B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 710239A249864FC320A593DA /* Pods-TYToolSet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

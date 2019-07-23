@@ -1,14 +1,39 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'TYDemos' do
+projectArr = ['TYDrawDemo', 'TYAVPlayerDemo', 'TYToolSet', 'TYOperationDemo', 'TYOpenGLESDemo', 'TYNativeAndWeb', 'TYGameSceneDemo', 'SSVirtualLocation']
+
+for index in 0..projectArr.length - 1 do 
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
-  # use_frameworks!
+  # project in array
+  proj = projectArr[index]
+  target proj do
+    use_frameworks!
 
-  # Pods for TYDemos
-  pod 'YYText'
-  pod 'YYModel'
-  pod 'WCDB'
-  pod 'Masonry'
+    workspace 'TYDemos/TYDemos.xcworkspace'
 
+    # project
+    project 'OtherProjects' + '/' + proj + '/' + proj + '.xcodeproj'
+
+    pod 'YYText'
+    pod 'YYModel'
+    pod 'WCDB'
+    pod 'Masonry'
+
+  end
 end
+
+
+
+
+# target 'TYDemos' do
+#   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+#   # use_frameworks!
+
+#   # Pods for TYDemos
+#   pod 'YYText'
+#   pod 'YYModel'
+#   pod 'WCDB'
+#   pod 'Masonry'
+
+# end
