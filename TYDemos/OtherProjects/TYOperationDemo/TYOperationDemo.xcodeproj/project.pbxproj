@@ -129,6 +129,7 @@
 		08875B0822533A66008A2F33 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = TY;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = Sheldon;
 				TargetAttributes = {

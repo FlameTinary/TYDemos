@@ -132,6 +132,7 @@
 		AFA5498320F4C4D700703C82 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = TY;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = soldoros;
 				TargetAttributes = {
