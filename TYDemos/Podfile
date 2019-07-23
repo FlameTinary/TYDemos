@@ -10,8 +10,8 @@ for index in 0..projectArr.length - 1 do
   target proj do
     use_frameworks!
 
+    #workspace
     workspace 'TYDemos/TYDemos.xcworkspace'
-
     # project
     project 'OtherProjects' + '/' + proj + '/' + proj + '.xcodeproj'
 
