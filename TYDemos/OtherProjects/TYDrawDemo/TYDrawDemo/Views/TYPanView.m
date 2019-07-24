@@ -14,6 +14,10 @@
 
 @implementation TYPanView
 
+- (void)drawRect:(CGRect)rect {
+    
+}
+
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         _panGes = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panView:)];

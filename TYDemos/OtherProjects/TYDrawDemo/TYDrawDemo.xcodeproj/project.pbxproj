@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		08117BBA22E83153005A1E93 /* TYPanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08117BB922E83153005A1E93 /* TYPanView.m */; };
-		08276BFD22E716D5000047C6 /* TYBezierDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08276BFC22E716D5000047C6 /* TYBezierDrawView.m */; };
+		08117BBD22E8441B005A1E93 /* TYBezierPathDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08117BBC22E8441B005A1E93 /* TYBezierPathDrawView.m */; };
+		08117BC022E844CC005A1E93 /* TYBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 08117BBF22E844CC005A1E93 /* TYBezierPath.m */; };
 		08B3002022E7027300BBDBC4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B3001F22E7027300BBDBC4 /* AppDelegate.m */; };
 		08B3002322E7027300BBDBC4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B3002222E7027300BBDBC4 /* ViewController.m */; };
 		08B3002622E7027300BBDBC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08B3002422E7027300BBDBC4 /* Main.storyboard */; };
@@ -21,8 +22,10 @@
 /* Begin PBXFileReference section */
 		08117BB822E83153005A1E93 /* TYPanView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYPanView.h; sourceTree = "<group>"; };
 		08117BB922E83153005A1E93 /* TYPanView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYPanView.m; sourceTree = "<group>"; };
-		08276BFB22E716D5000047C6 /* TYBezierDrawView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYBezierDrawView.h; sourceTree = "<group>"; };
-		08276BFC22E716D5000047C6 /* TYBezierDrawView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYBezierDrawView.m; sourceTree = "<group>"; };
+		08117BBB22E8441B005A1E93 /* TYBezierPathDrawView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYBezierPathDrawView.h; sourceTree = "<group>"; };
+		08117BBC22E8441B005A1E93 /* TYBezierPathDrawView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYBezierPathDrawView.m; sourceTree = "<group>"; };
+		08117BBE22E844CC005A1E93 /* TYBezierPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYBezierPath.h; sourceTree = "<group>"; };
+		08117BBF22E844CC005A1E93 /* TYBezierPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYBezierPath.m; sourceTree = "<group>"; };
 		08B3001B22E7027300BBDBC4 /* TYDrawDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TYDrawDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08B3001E22E7027300BBDBC4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		08B3001F22E7027300BBDBC4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -61,10 +64,12 @@
 		08276BF722E71643000047C6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				08276BFB22E716D5000047C6 /* TYBezierDrawView.h */,
-				08276BFC22E716D5000047C6 /* TYBezierDrawView.m */,
 				08117BB822E83153005A1E93 /* TYPanView.h */,
 				08117BB922E83153005A1E93 /* TYPanView.m */,
+				08117BBB22E8441B005A1E93 /* TYBezierPathDrawView.h */,
+				08117BBC22E8441B005A1E93 /* TYBezierPathDrawView.m */,
+				08117BBE22E844CC005A1E93 /* TYBezierPath.h */,
+				08117BBF22E844CC005A1E93 /* TYBezierPath.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -235,9 +240,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08276BFD22E716D5000047C6 /* TYBezierDrawView.m in Sources */,
+				08117BC022E844CC005A1E93 /* TYBezierPath.m in Sources */,
 				08B3002322E7027300BBDBC4 /* ViewController.m in Sources */,
 				08B3002E22E7027500BBDBC4 /* main.m in Sources */,
+				08117BBD22E8441B005A1E93 /* TYBezierPathDrawView.m in Sources */,
 				08117BBA22E83153005A1E93 /* TYPanView.m in Sources */,
 				08B3002022E7027300BBDBC4 /* AppDelegate.m in Sources */,
 			);
