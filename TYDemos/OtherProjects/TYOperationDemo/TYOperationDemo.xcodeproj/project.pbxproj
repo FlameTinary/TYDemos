@@ -14,7 +14,7 @@
 		08875B2022533A67008A2F33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08875B1E22533A67008A2F33 /* LaunchScreen.storyboard */; };
 		08875B2322533A67008A2F33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08875B2222533A67008A2F33 /* main.m */; };
 		08875B2B225348A1008A2F33 /* TYOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 08875B2A225348A1008A2F33 /* TYOperation.m */; };
-		C8B9CB2B3C09564FEA97A415 /* Pods_TYOperationDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44D6E7E69A94E5B57FFC88E0 /* Pods_TYOperationDemo.framework */; };
+		C0570614BD334185C48BFBCD /* libPods-TYOperationDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B7993B48630D6402C728EC58 /* libPods-TYOperationDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +31,7 @@
 		08875B29225348A1008A2F33 /* TYOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYOperation.h; sourceTree = "<group>"; };
 		08875B2A225348A1008A2F33 /* TYOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYOperation.m; sourceTree = "<group>"; };
 		40A6DEDED68487FEF4F03E84 /* Pods-TYOperationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYOperationDemo.debug.xcconfig"; path = "Target Support Files/Pods-TYOperationDemo/Pods-TYOperationDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		44D6E7E69A94E5B57FFC88E0 /* Pods_TYOperationDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TYOperationDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7993B48630D6402C728EC58 /* libPods-TYOperationDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TYOperationDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D10EC03CD8E4741918645230 /* Pods-TYOperationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYOperationDemo.release.xcconfig"; path = "Target Support Files/Pods-TYOperationDemo/Pods-TYOperationDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -40,7 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8B9CB2B3C09564FEA97A415 /* Pods_TYOperationDemo.framework in Frameworks */,
+				C0570614BD334185C48BFBCD /* libPods-TYOperationDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +96,7 @@
 		83FFC2215C87D9AC69234E87 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				44D6E7E69A94E5B57FFC88E0 /* Pods_TYOperationDemo.framework */,
+				B7993B48630D6402C728EC58 /* libPods-TYOperationDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -112,7 +112,6 @@
 				08875B0C22533A66008A2F33 /* Sources */,
 				08875B0D22533A66008A2F33 /* Frameworks */,
 				08875B0E22533A66008A2F33 /* Resources */,
-				85247E5944BC9B6BD272981B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,38 +169,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		85247E5944BC9B6BD272981B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TYOperationDemo/Pods-TYOperationDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Masonry-iOS12.2/Masonry.framework",
-				"${BUILT_PRODUCTS_DIR}/SQLiteRepairKit-iOS12.2/sqliterk.framework",
-				"${BUILT_PRODUCTS_DIR}/WCDB-iOS12.2/WCDB.framework",
-				"${BUILT_PRODUCTS_DIR}/WCDBOptimizedSQLCipher-iOS12.2/sqlcipher.framework",
-				"${BUILT_PRODUCTS_DIR}/YYModel-iOS12.2/YYModel.framework",
-				"${BUILT_PRODUCTS_DIR}/YYText-iOS12.2/YYText.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/sqliterk.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WCDB.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/sqlcipher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYText.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TYOperationDemo/Pods-TYOperationDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		EF47598E58716AB2D9356CDE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

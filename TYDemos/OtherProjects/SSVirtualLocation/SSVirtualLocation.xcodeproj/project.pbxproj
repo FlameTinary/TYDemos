@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4B7D256F78CB581F360227ED /* Pods_SSVirtualLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB75AF2E6418DFB0EB788E4F /* Pods_SSVirtualLocation.framework */; };
+		4B85A5FEA3D4958A8FC37E1E /* libPods-SSVirtualLocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23CDE3C943F10461DF086DB7 /* libPods-SSVirtualLocation.a */; };
 		AFA5499020F4C4D700703C82 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFA5498F20F4C4D700703C82 /* AppDelegate.m */; };
 		AFA5499320F4C4D700703C82 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFA5499220F4C4D700703C82 /* ViewController.m */; };
 		AFA5499620F4C4D700703C82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFA5499420F4C4D700703C82 /* Main.storyboard */; };
@@ -19,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23CDE3C943F10461DF086DB7 /* libPods-SSVirtualLocation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SSVirtualLocation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		812B6E74919318445A5B7820 /* Pods-SSVirtualLocation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSVirtualLocation.debug.xcconfig"; path = "Target Support Files/Pods-SSVirtualLocation/Pods-SSVirtualLocation.debug.xcconfig"; sourceTree = "<group>"; };
 		A2F5BF38FAAEC635B37B23CC /* Pods-SSVirtualLocation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSVirtualLocation.release.xcconfig"; path = "Target Support Files/Pods-SSVirtualLocation/Pods-SSVirtualLocation.release.xcconfig"; sourceTree = "<group>"; };
 		AFA5498B20F4C4D700703C82 /* SSVirtualLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSVirtualLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,7 +35,6 @@
 		AFA549A420F4C50600703C82 /* ChangeLoction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeLoction.m; sourceTree = "<group>"; };
 		AFA549A520F4C50600703C82 /* ChangeLoction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeLoction.h; sourceTree = "<group>"; };
 		AFA549A720F4C51100703C82 /* Location1.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Location1.gpx; sourceTree = "<group>"; };
-		DB75AF2E6418DFB0EB788E4F /* Pods_SSVirtualLocation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSVirtualLocation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B7D256F78CB581F360227ED /* Pods_SSVirtualLocation.framework in Frameworks */,
+				4B85A5FEA3D4958A8FC37E1E /* libPods-SSVirtualLocation.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +99,7 @@
 		F46B67A7CEA3CB1811362BAE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DB75AF2E6418DFB0EB788E4F /* Pods_SSVirtualLocation.framework */,
+				23CDE3C943F10461DF086DB7 /* libPods-SSVirtualLocation.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -115,7 +115,6 @@
 				AFA5498720F4C4D700703C82 /* Sources */,
 				AFA5498820F4C4D700703C82 /* Frameworks */,
 				AFA5498920F4C4D700703C82 /* Resources */,
-				27EA4A79EDAC55A8E0BE2FE8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -174,38 +173,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		27EA4A79EDAC55A8E0BE2FE8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SSVirtualLocation/Pods-SSVirtualLocation-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Masonry-iOS11.4/Masonry.framework",
-				"${BUILT_PRODUCTS_DIR}/SQLiteRepairKit-iOS11.4/sqliterk.framework",
-				"${BUILT_PRODUCTS_DIR}/WCDB-iOS11.4/WCDB.framework",
-				"${BUILT_PRODUCTS_DIR}/WCDBOptimizedSQLCipher-iOS11.4/sqlcipher.framework",
-				"${BUILT_PRODUCTS_DIR}/YYModel-iOS11.4/YYModel.framework",
-				"${BUILT_PRODUCTS_DIR}/YYText-iOS11.4/YYText.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/sqliterk.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WCDB.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/sqlcipher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYText.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SSVirtualLocation/Pods-SSVirtualLocation-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		CFC4A5916F23FDE2630F0C54 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

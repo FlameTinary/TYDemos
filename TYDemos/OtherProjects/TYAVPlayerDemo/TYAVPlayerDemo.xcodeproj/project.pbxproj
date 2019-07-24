@@ -13,7 +13,7 @@
 		0802026022D46E7E00553B93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0802025F22D46E7E00553B93 /* Assets.xcassets */; };
 		0802026322D46E7E00553B93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0802026122D46E7E00553B93 /* LaunchScreen.storyboard */; };
 		0802026622D46E7E00553B93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0802026522D46E7E00553B93 /* main.m */; };
-		0C9ABD1024DFDC92D01FB972 /* Pods_TYAVPlayerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7913772D9166CDEDC4B2207 /* Pods_TYAVPlayerDemo.framework */; };
+		6514B7DA97D61D46F58FEB9D /* libPods-TYAVPlayerDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B2534E7725A7FCAA2AE65EB /* libPods-TYAVPlayerDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 		0802026522D46E7E00553B93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		687CE1D8B3135B13F1F0AABF /* Pods-TYAVPlayerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYAVPlayerDemo.debug.xcconfig"; path = "Target Support Files/Pods-TYAVPlayerDemo/Pods-TYAVPlayerDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		787A582799DE89879C2AFD97 /* Pods-TYAVPlayerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYAVPlayerDemo.release.xcconfig"; path = "Target Support Files/Pods-TYAVPlayerDemo/Pods-TYAVPlayerDemo.release.xcconfig"; sourceTree = "<group>"; };
-		E7913772D9166CDEDC4B2207 /* Pods_TYAVPlayerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TYAVPlayerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B2534E7725A7FCAA2AE65EB /* libPods-TYAVPlayerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TYAVPlayerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C9ABD1024DFDC92D01FB972 /* Pods_TYAVPlayerDemo.framework in Frameworks */,
+				6514B7DA97D61D46F58FEB9D /* libPods-TYAVPlayerDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,7 +91,7 @@
 		7B75A69C8C4E31EDBAEAAB2A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E7913772D9166CDEDC4B2207 /* Pods_TYAVPlayerDemo.framework */,
+				9B2534E7725A7FCAA2AE65EB /* libPods-TYAVPlayerDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -107,7 +107,6 @@
 				0802024F22D46E7E00553B93 /* Sources */,
 				0802025022D46E7E00553B93 /* Frameworks */,
 				0802025122D46E7E00553B93 /* Resources */,
-				5F37499685684388E7FEF285 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -165,38 +164,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5F37499685684388E7FEF285 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TYAVPlayerDemo/Pods-TYAVPlayerDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Masonry-iOS12.2/Masonry.framework",
-				"${BUILT_PRODUCTS_DIR}/SQLiteRepairKit-iOS12.2/sqliterk.framework",
-				"${BUILT_PRODUCTS_DIR}/WCDB-iOS12.2/WCDB.framework",
-				"${BUILT_PRODUCTS_DIR}/WCDBOptimizedSQLCipher-iOS12.2/sqlcipher.framework",
-				"${BUILT_PRODUCTS_DIR}/YYModel-iOS12.2/YYModel.framework",
-				"${BUILT_PRODUCTS_DIR}/YYText-iOS12.2/YYText.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/sqliterk.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WCDB.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/sqlcipher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYText.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TYAVPlayerDemo/Pods-TYAVPlayerDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		E0BB2348A4BA6D7B66AD8292 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

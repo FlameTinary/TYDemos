@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08117BBA22E83153005A1E93 /* TYPanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08117BB922E83153005A1E93 /* TYPanView.m */; };
 		08276BFD22E716D5000047C6 /* TYBezierDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08276BFC22E716D5000047C6 /* TYBezierDrawView.m */; };
 		08B3002022E7027300BBDBC4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B3001F22E7027300BBDBC4 /* AppDelegate.m */; };
 		08B3002322E7027300BBDBC4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B3002222E7027300BBDBC4 /* ViewController.m */; };
@@ -14,10 +15,12 @@
 		08B3002822E7027500BBDBC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08B3002722E7027500BBDBC4 /* Assets.xcassets */; };
 		08B3002B22E7027500BBDBC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08B3002922E7027500BBDBC4 /* LaunchScreen.storyboard */; };
 		08B3002E22E7027500BBDBC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B3002D22E7027500BBDBC4 /* main.m */; };
-		B6858F50A05526CF2419D3FE /* Pods_TYDrawDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2218398741EF22B0820113B /* Pods_TYDrawDemo.framework */; };
+		E2DE977A1197AC92E57ADE92 /* libPods-TYDrawDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE17A016933419C2ACF5E0E8 /* libPods-TYDrawDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08117BB822E83153005A1E93 /* TYPanView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYPanView.h; sourceTree = "<group>"; };
+		08117BB922E83153005A1E93 /* TYPanView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYPanView.m; sourceTree = "<group>"; };
 		08276BFB22E716D5000047C6 /* TYBezierDrawView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYBezierDrawView.h; sourceTree = "<group>"; };
 		08276BFC22E716D5000047C6 /* TYBezierDrawView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYBezierDrawView.m; sourceTree = "<group>"; };
 		08B3001B22E7027300BBDBC4 /* TYDrawDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TYDrawDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -31,8 +34,8 @@
 		08B3002C22E7027500BBDBC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08B3002D22E7027500BBDBC4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9E5F4C5A3536AF085A802EAF /* Pods-TYDrawDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYDrawDemo.debug.xcconfig"; path = "Target Support Files/Pods-TYDrawDemo/Pods-TYDrawDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		A2218398741EF22B0820113B /* Pods_TYDrawDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TYDrawDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F445B4F1CFEB3787AA2DB1E1 /* Pods-TYDrawDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYDrawDemo.release.xcconfig"; path = "Target Support Files/Pods-TYDrawDemo/Pods-TYDrawDemo.release.xcconfig"; sourceTree = "<group>"; };
+		FE17A016933419C2ACF5E0E8 /* libPods-TYDrawDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TYDrawDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6858F50A05526CF2419D3FE /* Pods_TYDrawDemo.framework in Frameworks */,
+				E2DE977A1197AC92E57ADE92 /* libPods-TYDrawDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,7 +53,7 @@
 		03A5C0E39FB0E2837575CE06 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A2218398741EF22B0820113B /* Pods_TYDrawDemo.framework */,
+				FE17A016933419C2ACF5E0E8 /* libPods-TYDrawDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -60,6 +63,8 @@
 			children = (
 				08276BFB22E716D5000047C6 /* TYBezierDrawView.h */,
 				08276BFC22E716D5000047C6 /* TYBezierDrawView.m */,
+				08117BB822E83153005A1E93 /* TYPanView.h */,
+				08117BB922E83153005A1E93 /* TYPanView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -144,7 +149,6 @@
 				08B3001722E7027300BBDBC4 /* Sources */,
 				08B3001822E7027300BBDBC4 /* Frameworks */,
 				08B3001922E7027300BBDBC4 /* Resources */,
-				68B857D36B256177ABF70256 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -202,38 +206,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		68B857D36B256177ABF70256 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TYDrawDemo/Pods-TYDrawDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Masonry-iOS12.2/Masonry.framework",
-				"${BUILT_PRODUCTS_DIR}/SQLiteRepairKit-iOS12.2/sqliterk.framework",
-				"${BUILT_PRODUCTS_DIR}/WCDB-iOS12.2/WCDB.framework",
-				"${BUILT_PRODUCTS_DIR}/WCDBOptimizedSQLCipher-iOS12.2/sqlcipher.framework",
-				"${BUILT_PRODUCTS_DIR}/YYModel-iOS12.2/YYModel.framework",
-				"${BUILT_PRODUCTS_DIR}/YYText-iOS12.2/YYText.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/sqliterk.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WCDB.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/sqlcipher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYText.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TYDrawDemo/Pods-TYDrawDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		70B385BB2388459BB9BA740F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -266,6 +238,7 @@
 				08276BFD22E716D5000047C6 /* TYBezierDrawView.m in Sources */,
 				08B3002322E7027300BBDBC4 /* ViewController.m in Sources */,
 				08B3002E22E7027500BBDBC4 /* main.m in Sources */,
+				08117BBA22E83153005A1E93 /* TYPanView.m in Sources */,
 				08B3002022E7027300BBDBC4 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

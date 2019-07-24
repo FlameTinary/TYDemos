@@ -14,7 +14,7 @@
 		082015DB22A22B6100F58A12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 082015DA22A22B6100F58A12 /* Assets.xcassets */; };
 		082015DE22A22B6100F58A12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 082015DC22A22B6100F58A12 /* LaunchScreen.storyboard */; };
 		082015E122A22B6100F58A12 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 082015E022A22B6100F58A12 /* main.m */; };
-		5A186E3B2538E15BEF8F81E8 /* Pods_TYGameSceneDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42A5DE0229AFB44DEEA54242 /* Pods_TYGameSceneDemo.framework */; };
+		ED593B5E10FE2312FAD9A331 /* libPods-TYGameSceneDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71976BCBE6E7B00A10AA7A92 /* libPods-TYGameSceneDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,8 +29,8 @@
 		082015DD22A22B6100F58A12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		082015DF22A22B6100F58A12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		082015E022A22B6100F58A12 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		42A5DE0229AFB44DEEA54242 /* Pods_TYGameSceneDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TYGameSceneDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70792FF5872178A1E70EAA9B /* Pods-TYGameSceneDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYGameSceneDemo.release.xcconfig"; path = "Target Support Files/Pods-TYGameSceneDemo/Pods-TYGameSceneDemo.release.xcconfig"; sourceTree = "<group>"; };
+		71976BCBE6E7B00A10AA7A92 /* libPods-TYGameSceneDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TYGameSceneDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D726B1C52401DE568505C41E /* Pods-TYGameSceneDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYGameSceneDemo.debug.xcconfig"; path = "Target Support Files/Pods-TYGameSceneDemo/Pods-TYGameSceneDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -39,7 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A186E3B2538E15BEF8F81E8 /* Pods_TYGameSceneDemo.framework in Frameworks */,
+				ED593B5E10FE2312FAD9A331 /* libPods-TYGameSceneDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +94,7 @@
 		383303EF0735C9DACA7C5DDF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				42A5DE0229AFB44DEEA54242 /* Pods_TYGameSceneDemo.framework */,
+				71976BCBE6E7B00A10AA7A92 /* libPods-TYGameSceneDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -110,7 +110,6 @@
 				082015C822A22B6100F58A12 /* Sources */,
 				082015C922A22B6100F58A12 /* Frameworks */,
 				082015CA22A22B6100F58A12 /* Resources */,
-				0BFBBCFC249A47E6DBF9E924 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -169,38 +168,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0BFBBCFC249A47E6DBF9E924 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TYGameSceneDemo/Pods-TYGameSceneDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Masonry-iOS12.2/Masonry.framework",
-				"${BUILT_PRODUCTS_DIR}/SQLiteRepairKit-iOS12.2/sqliterk.framework",
-				"${BUILT_PRODUCTS_DIR}/WCDB-iOS12.2/WCDB.framework",
-				"${BUILT_PRODUCTS_DIR}/WCDBOptimizedSQLCipher-iOS12.2/sqlcipher.framework",
-				"${BUILT_PRODUCTS_DIR}/YYModel-iOS12.2/YYModel.framework",
-				"${BUILT_PRODUCTS_DIR}/YYText-iOS12.2/YYText.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/sqliterk.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WCDB.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/sqlcipher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYText.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TYGameSceneDemo/Pods-TYGameSceneDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		9E57B401C36BD0514AC5EE2C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

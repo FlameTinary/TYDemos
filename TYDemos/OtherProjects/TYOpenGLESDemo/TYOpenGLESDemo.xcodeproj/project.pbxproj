@@ -13,7 +13,7 @@
 		0820157122A12E8400F58A12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0820157022A12E8400F58A12 /* Assets.xcassets */; };
 		0820157422A12E8400F58A12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0820157222A12E8400F58A12 /* LaunchScreen.storyboard */; };
 		0820157722A12E8400F58A12 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0820157622A12E8400F58A12 /* main.m */; };
-		E2A2A51D54982837D1F76A1C /* Pods_TYOpenGLESDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB4E94D7577404114DC6B859 /* Pods_TYOpenGLESDemo.framework */; };
+		7BCE8EA2EFFA4DD76BC76390 /* libPods-TYOpenGLESDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D47E09B6EDA65F10957D520 /* libPods-TYOpenGLESDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +27,8 @@
 		0820157322A12E8400F58A12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0820157522A12E8400F58A12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0820157622A12E8400F58A12 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0D47E09B6EDA65F10957D520 /* libPods-TYOpenGLESDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TYOpenGLESDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3904129127F25C8CE3C864A /* Pods-TYOpenGLESDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYOpenGLESDemo.debug.xcconfig"; path = "Target Support Files/Pods-TYOpenGLESDemo/Pods-TYOpenGLESDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		EB4E94D7577404114DC6B859 /* Pods_TYOpenGLESDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TYOpenGLESDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F75EE5CCD7CA5150C3C1D425 /* Pods-TYOpenGLESDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYOpenGLESDemo.release.xcconfig"; path = "Target Support Files/Pods-TYOpenGLESDemo/Pods-TYOpenGLESDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -37,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2A2A51D54982837D1F76A1C /* Pods_TYOpenGLESDemo.framework in Frameworks */,
+				7BCE8EA2EFFA4DD76BC76390 /* libPods-TYOpenGLESDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,7 +91,7 @@
 		9F78AE85D23588C51F37E1B1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EB4E94D7577404114DC6B859 /* Pods_TYOpenGLESDemo.framework */,
+				0D47E09B6EDA65F10957D520 /* libPods-TYOpenGLESDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -107,7 +107,6 @@
 				0820156022A12E8300F58A12 /* Sources */,
 				0820156122A12E8300F58A12 /* Frameworks */,
 				0820156222A12E8300F58A12 /* Resources */,
-				8EE0954D58FDC1329B1D654D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -165,38 +164,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8EE0954D58FDC1329B1D654D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TYOpenGLESDemo/Pods-TYOpenGLESDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Masonry-iOS12.2/Masonry.framework",
-				"${BUILT_PRODUCTS_DIR}/SQLiteRepairKit-iOS12.2/sqliterk.framework",
-				"${BUILT_PRODUCTS_DIR}/WCDB-iOS12.2/WCDB.framework",
-				"${BUILT_PRODUCTS_DIR}/WCDBOptimizedSQLCipher-iOS12.2/sqlcipher.framework",
-				"${BUILT_PRODUCTS_DIR}/YYModel-iOS12.2/YYModel.framework",
-				"${BUILT_PRODUCTS_DIR}/YYText-iOS12.2/YYText.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/sqliterk.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WCDB.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/sqlcipher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYText.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TYOpenGLESDemo/Pods-TYOpenGLESDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C895E45689C8006B7FE5082B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

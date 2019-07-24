@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "TYBezierDrawView.h"
+#import "TYPanView.h"
 
 @interface ViewController ()
 
@@ -18,8 +19,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    TYBezierDrawView * bezierView = [[TYBezierDrawView alloc] initWithFrame:CGRectMake(100, 100, 200, 200)];
-    [self.view addSubview:bezierView];
+//    TYBezierDrawView * bezierView = [[TYBezierDrawView alloc] initWithFrame:CGRectMake(100, 100, 200, 200)];
+//    [self.view addSubview:bezierView];
+    
+    TYPanView * panView = [TYPanView new];
+    [self.view addSubview:panView];
+    
     
 }
 
