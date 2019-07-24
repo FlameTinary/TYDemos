@@ -10,6 +10,7 @@
 		08117BBA22E83153005A1E93 /* TYPanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08117BB922E83153005A1E93 /* TYPanView.m */; };
 		08117BBD22E8441B005A1E93 /* TYBezierPathDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08117BBC22E8441B005A1E93 /* TYBezierPathDrawView.m */; };
 		08117BC022E844CC005A1E93 /* TYBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 08117BBF22E844CC005A1E93 /* TYBezierPath.m */; };
+		08117BC522E8540C005A1E93 /* TYQuartzView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08117BC422E8540C005A1E93 /* TYQuartzView.m */; };
 		08B3002022E7027300BBDBC4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B3001F22E7027300BBDBC4 /* AppDelegate.m */; };
 		08B3002322E7027300BBDBC4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B3002222E7027300BBDBC4 /* ViewController.m */; };
 		08B3002622E7027300BBDBC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08B3002422E7027300BBDBC4 /* Main.storyboard */; };
@@ -26,6 +27,8 @@
 		08117BBC22E8441B005A1E93 /* TYBezierPathDrawView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYBezierPathDrawView.m; sourceTree = "<group>"; };
 		08117BBE22E844CC005A1E93 /* TYBezierPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYBezierPath.h; sourceTree = "<group>"; };
 		08117BBF22E844CC005A1E93 /* TYBezierPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYBezierPath.m; sourceTree = "<group>"; };
+		08117BC322E8540C005A1E93 /* TYQuartzView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYQuartzView.h; sourceTree = "<group>"; };
+		08117BC422E8540C005A1E93 /* TYQuartzView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYQuartzView.m; sourceTree = "<group>"; };
 		08B3001B22E7027300BBDBC4 /* TYDrawDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TYDrawDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08B3001E22E7027300BBDBC4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		08B3001F22E7027300BBDBC4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -70,6 +73,8 @@
 				08117BBC22E8441B005A1E93 /* TYBezierPathDrawView.m */,
 				08117BBE22E844CC005A1E93 /* TYBezierPath.h */,
 				08117BBF22E844CC005A1E93 /* TYBezierPath.m */,
+				08117BC322E8540C005A1E93 /* TYQuartzView.h */,
+				08117BC422E8540C005A1E93 /* TYQuartzView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -244,6 +249,7 @@
 				08B3002322E7027300BBDBC4 /* ViewController.m in Sources */,
 				08B3002E22E7027500BBDBC4 /* main.m in Sources */,
 				08117BBD22E8441B005A1E93 /* TYBezierPathDrawView.m in Sources */,
+				08117BC522E8540C005A1E93 /* TYQuartzView.m in Sources */,
 				08117BBA22E83153005A1E93 /* TYPanView.m in Sources */,
 				08B3002022E7027300BBDBC4 /* AppDelegate.m in Sources */,
 			);

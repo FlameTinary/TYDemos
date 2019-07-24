@@ -9,8 +9,8 @@
 #import "TYBezierPathDrawView.h"
 #import "TYBezierPath.h"
 
-#define kEraseLineWidth 10
-#define kLineWidth 10
+#define kBezierEraseLineWidth 10
+#define kBezierLineWidth 10
 
 @interface TYBezierPathDrawView()
 @property(nonatomic, strong) TYBezierPath *bezierPath;
@@ -32,10 +32,10 @@
             path.lineJoinStyle = kCGLineJoinRound;
             path.lineCapStyle = kCGLineCapRound;
             if (path.isErase) {
-                path.lineWidth = kEraseLineWidth;
+                path.lineWidth = kBezierEraseLineWidth;
                 [path strokeWithBlendMode:kCGBlendModeCopy alpha:1.0];
             } else {
-                path.lineWidth = kLineWidth;
+                path.lineWidth = kBezierLineWidth;
                 [path strokeWithBlendMode:kCGBlendModeNormal alpha:1.0];
             }
             [path stroke];

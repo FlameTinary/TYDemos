@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "TYPanView.h"
 #import "TYBezierPathDrawView.h"
+#import "TYQuartzView.h"
 
 @interface ViewController ()
 
@@ -25,8 +26,11 @@
 //    TYPanView * panView = [[TYPanView alloc] initWithFrame:self.view.bounds];
 //    [self.view addSubview:panView];
     
-    TYBezierPathDrawView * bdView = [[TYBezierPathDrawView alloc] initWithFrame:self.view.bounds];
-    [self.view addSubview:bdView];
+//    TYBezierPathDrawView * bdView = [[TYBezierPathDrawView alloc] initWithFrame:self.view.bounds];
+//    [self.view addSubview:bdView];
+    
+    TYQuartzView * qView = [[TYQuartzView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:qView];
     
     
 }
