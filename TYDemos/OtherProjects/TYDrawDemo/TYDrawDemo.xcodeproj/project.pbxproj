@@ -17,6 +17,8 @@
 		08B3002822E7027500BBDBC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08B3002722E7027500BBDBC4 /* Assets.xcassets */; };
 		08B3002B22E7027500BBDBC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08B3002922E7027500BBDBC4 /* LaunchScreen.storyboard */; };
 		08B3002E22E7027500BBDBC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B3002D22E7027500BBDBC4 /* main.m */; };
+		08CC238B22E98C0600EE9969 /* TYLayerDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CC238A22E98C0600EE9969 /* TYLayerDrawView.m */; };
+		08CC238E22E98E0100EE9969 /* TYLineLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CC238D22E98E0100EE9969 /* TYLineLayer.m */; };
 		E2DE977A1197AC92E57ADE92 /* libPods-TYDrawDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE17A016933419C2ACF5E0E8 /* libPods-TYDrawDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,10 @@
 		08B3002A22E7027500BBDBC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08B3002C22E7027500BBDBC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08B3002D22E7027500BBDBC4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		08CC238922E98C0600EE9969 /* TYLayerDrawView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYLayerDrawView.h; sourceTree = "<group>"; };
+		08CC238A22E98C0600EE9969 /* TYLayerDrawView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYLayerDrawView.m; sourceTree = "<group>"; };
+		08CC238C22E98E0100EE9969 /* TYLineLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYLineLayer.h; sourceTree = "<group>"; };
+		08CC238D22E98E0100EE9969 /* TYLineLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYLineLayer.m; sourceTree = "<group>"; };
 		9E5F4C5A3536AF085A802EAF /* Pods-TYDrawDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYDrawDemo.debug.xcconfig"; path = "Target Support Files/Pods-TYDrawDemo/Pods-TYDrawDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		F445B4F1CFEB3787AA2DB1E1 /* Pods-TYDrawDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYDrawDemo.release.xcconfig"; path = "Target Support Files/Pods-TYDrawDemo/Pods-TYDrawDemo.release.xcconfig"; sourceTree = "<group>"; };
 		FE17A016933419C2ACF5E0E8 /* libPods-TYDrawDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TYDrawDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +81,10 @@
 				08117BBF22E844CC005A1E93 /* TYBezierPath.m */,
 				08117BC322E8540C005A1E93 /* TYQuartzView.h */,
 				08117BC422E8540C005A1E93 /* TYQuartzView.m */,
+				08CC238922E98C0600EE9969 /* TYLayerDrawView.h */,
+				08CC238A22E98C0600EE9969 /* TYLayerDrawView.m */,
+				08CC238C22E98E0100EE9969 /* TYLineLayer.h */,
+				08CC238D22E98E0100EE9969 /* TYLineLayer.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -245,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08CC238E22E98E0100EE9969 /* TYLineLayer.m in Sources */,
 				08117BC022E844CC005A1E93 /* TYBezierPath.m in Sources */,
 				08B3002322E7027300BBDBC4 /* ViewController.m in Sources */,
 				08B3002E22E7027500BBDBC4 /* main.m in Sources */,
@@ -252,6 +263,7 @@
 				08117BC522E8540C005A1E93 /* TYQuartzView.m in Sources */,
 				08117BBA22E83153005A1E93 /* TYPanView.m in Sources */,
 				08B3002022E7027300BBDBC4 /* AppDelegate.m in Sources */,
+				08CC238B22E98C0600EE9969 /* TYLayerDrawView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

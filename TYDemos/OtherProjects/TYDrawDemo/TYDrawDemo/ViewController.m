@@ -10,6 +10,7 @@
 #import "TYPanView.h"
 #import "TYBezierPathDrawView.h"
 #import "TYQuartzView.h"
+#import "TYLayerDrawView.h"
 
 @interface ViewController ()
 
@@ -29,10 +30,12 @@
 //    TYBezierPathDrawView * bdView = [[TYBezierPathDrawView alloc] initWithFrame:self.view.bounds];
 //    [self.view addSubview:bdView];
     
-    TYQuartzView * qView = [[TYQuartzView alloc] initWithFrame:self.view.bounds];
-    [self.view addSubview:qView];
-    
-    
+//    TYQuartzView * qView = [[TYQuartzView alloc] initWithFrame:self.view.bounds];
+//    [self.view addSubview:qView];
+    TYLayerDrawView * ldView = [[TYLayerDrawView alloc] initWithFrame:self.view.bounds];
+    ldView.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:ldView];
+
 }
 
 
