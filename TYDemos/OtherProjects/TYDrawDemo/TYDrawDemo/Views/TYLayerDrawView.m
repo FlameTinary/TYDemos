@@ -8,14 +8,17 @@
 
 #import "TYLayerDrawView.h"
 #import "TYLineLayer.h"
+#import "TYLine.h"
 
 #define kBezierEraseLineWidth 10
 #define kBezierLineWidth 10
 
 @interface TYLayerDrawView()<CALayerDelegate>
 
+@property(nonatomic, strong) TYLine * currentLine;
 @property(nonatomic, strong) TYLineLayer * currentLayer;
 @property(nonatomic, strong) NSMutableArray<TYLineLayer *> * layerArrM;
+@property(nonatomic, strong) NSMutableArray<TYLine *> *lines;
 
 @end
 
@@ -28,6 +31,7 @@
         self.lineColor = [UIColor redColor];
         self.isErase = NO;
         _layerArrM = [NSMutableArray array];
+        _lines = [NSMutableArray array];
     }
     return self;
 }
@@ -47,6 +51,11 @@
     _currentLayer.bezierPath.isErase = self.isErase;
     [_currentLayer.bezierPath moveToPoint:currentPoint];
     [_currentLayer setNeedsDisplay];
+    
+    TYPoint * tpoint = [TYPoint pointWithPoint:currentPoint andType:TYPointTypeStart];
+    _currentLine = [[TYLine alloc] init];
+    [_currentLine addPointToFirst:tpoint];
+    
 }
 - (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     
@@ -58,6 +67,9 @@
     
     [self.currentLayer.bezierPath addQuadCurveToPoint:currentPoint controlPoint:midP];
     [_currentLayer setNeedsDisplay];
+    
+    TYPoint * tpoint = [TYPoint pointWithPoint:currentPoint andType:TYPointTypeMove];
+    [_currentLine addPoint:tpoint];
     
 }
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
@@ -76,6 +88,10 @@
 //        [_layerArrM removeObject:la];
 //    }
     [_currentLayer setNeedsDisplay];
+    
+    TYPoint * tpoint = [TYPoint pointWithPoint:currentPoint andType:TYPointTypeEnd];
+    [_currentLine addPointToEnd:tpoint];
+    [_lines addObject:_currentLine];
 }
 
 #pragma mark - CALayerDelegate

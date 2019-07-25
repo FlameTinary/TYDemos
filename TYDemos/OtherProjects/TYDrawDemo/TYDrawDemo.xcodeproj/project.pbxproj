@@ -19,6 +19,8 @@
 		08B3002E22E7027500BBDBC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B3002D22E7027500BBDBC4 /* main.m */; };
 		08CC238B22E98C0600EE9969 /* TYLayerDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CC238A22E98C0600EE9969 /* TYLayerDrawView.m */; };
 		08CC238E22E98E0100EE9969 /* TYLineLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CC238D22E98E0100EE9969 /* TYLineLayer.m */; };
+		08CC239122E99C4B00EE9969 /* TYLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CC239022E99C4B00EE9969 /* TYLine.m */; };
+		08CC239722E99C9900EE9969 /* TYPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CC239622E99C9900EE9969 /* TYPoint.m */; };
 		E2DE977A1197AC92E57ADE92 /* libPods-TYDrawDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE17A016933419C2ACF5E0E8 /* libPods-TYDrawDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +47,10 @@
 		08CC238A22E98C0600EE9969 /* TYLayerDrawView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYLayerDrawView.m; sourceTree = "<group>"; };
 		08CC238C22E98E0100EE9969 /* TYLineLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYLineLayer.h; sourceTree = "<group>"; };
 		08CC238D22E98E0100EE9969 /* TYLineLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYLineLayer.m; sourceTree = "<group>"; };
+		08CC238F22E99C4B00EE9969 /* TYLine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYLine.h; sourceTree = "<group>"; };
+		08CC239022E99C4B00EE9969 /* TYLine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYLine.m; sourceTree = "<group>"; };
+		08CC239522E99C9900EE9969 /* TYPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYPoint.h; sourceTree = "<group>"; };
+		08CC239622E99C9900EE9969 /* TYPoint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYPoint.m; sourceTree = "<group>"; };
 		9E5F4C5A3536AF085A802EAF /* Pods-TYDrawDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYDrawDemo.debug.xcconfig"; path = "Target Support Files/Pods-TYDrawDemo/Pods-TYDrawDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		F445B4F1CFEB3787AA2DB1E1 /* Pods-TYDrawDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYDrawDemo.release.xcconfig"; path = "Target Support Files/Pods-TYDrawDemo/Pods-TYDrawDemo.release.xcconfig"; sourceTree = "<group>"; };
 		FE17A016933419C2ACF5E0E8 /* libPods-TYDrawDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TYDrawDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +91,10 @@
 				08CC238A22E98C0600EE9969 /* TYLayerDrawView.m */,
 				08CC238C22E98E0100EE9969 /* TYLineLayer.h */,
 				08CC238D22E98E0100EE9969 /* TYLineLayer.m */,
+				08CC238F22E99C4B00EE9969 /* TYLine.h */,
+				08CC239022E99C4B00EE9969 /* TYLine.m */,
+				08CC239522E99C9900EE9969 /* TYPoint.h */,
+				08CC239622E99C9900EE9969 /* TYPoint.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -259,11 +269,13 @@
 				08117BC022E844CC005A1E93 /* TYBezierPath.m in Sources */,
 				08B3002322E7027300BBDBC4 /* ViewController.m in Sources */,
 				08B3002E22E7027500BBDBC4 /* main.m in Sources */,
+				08CC239122E99C4B00EE9969 /* TYLine.m in Sources */,
 				08117BBD22E8441B005A1E93 /* TYBezierPathDrawView.m in Sources */,
 				08117BC522E8540C005A1E93 /* TYQuartzView.m in Sources */,
 				08117BBA22E83153005A1E93 /* TYPanView.m in Sources */,
 				08B3002022E7027300BBDBC4 /* AppDelegate.m in Sources */,
 				08CC238B22E98C0600EE9969 /* TYLayerDrawView.m in Sources */,
+				08CC239722E99C9900EE9969 /* TYPoint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
