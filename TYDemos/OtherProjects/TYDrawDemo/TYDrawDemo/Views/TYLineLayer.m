@@ -18,11 +18,15 @@
         self.bezierPath = [[TYBezierPath alloc] init];
         self.bezierPath.lineJoinStyle = kCGLineJoinRound;
         self.bezierPath.lineCapStyle = kCGLineCapRound;
-        [[UIColor redColor] setStroke];
-        self.bezierPath.lineWidth = 10;
+//        self.bezierPath.lineWidth = 10;
         
     }
     return self;
+}
+
+- (void)setLineWidth:(CGFloat)lineWidth {
+    _lineWidth = lineWidth;
+    self.bezierPath.lineWidth = lineWidth;
 }
 
 @end

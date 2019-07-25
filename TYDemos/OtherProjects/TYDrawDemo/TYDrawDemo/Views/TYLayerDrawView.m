@@ -12,6 +12,7 @@
 
 #define kBezierEraseLineWidth 10
 #define kBezierLineWidth 10
+#define HexColor(s)  [UIColor colorWithRed:(((s & 0xFF0000) >> 16))/255.0 green:(((s &0xFF00) >>8))/255.0 blue:((s &0xFF))/255.0 alpha:1.0]
 
 @interface TYLayerDrawView()<CALayerDelegate>
 
@@ -28,7 +29,8 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.lineColor = [UIColor redColor];
+        self.lineColor = 0x656565;
+        self.lineWidth = 10;
         self.isErase = NO;
         _layerArrM = [NSMutableArray array];
         _lines = [NSMutableArray array];
@@ -42,18 +44,21 @@
     CGPoint currentPoint = [touch locationInView:self];
     
     _currentLayer = [[TYLineLayer alloc] init];
+    _currentLayer.lineWidth = self.lineWidth;
     _currentLayer.delegate = self;
     _currentLayer.frame = self.layer.bounds;
     [self.layer addSublayer:_currentLayer];
     [_layerArrM addObject:_currentLayer];
     
-    _currentLayer.bezierPath.lineColor = self.lineColor;
-    _currentLayer.bezierPath.isErase = self.isErase;
+//    _currentLayer.bezierPath.lineColor = self.lineColor;
+//    _currentLayer.bezierPath.isErase = self.isErase;
     [_currentLayer.bezierPath moveToPoint:currentPoint];
     [_currentLayer setNeedsDisplay];
     
     TYPoint * tpoint = [TYPoint pointWithPoint:currentPoint andType:TYPointTypeStart];
     _currentLine = [[TYLine alloc] init];
+    _currentLine.color = self.lineColor;
+    _currentLine.width = self.lineWidth;
     [_currentLine addPointToFirst:tpoint];
     
 }
@@ -81,7 +86,6 @@
     
     [self.currentLayer.bezierPath addQuadCurveToPoint:currentPoint controlPoint:midP];
     
-    NSLog(@"_layerArrM。count = %lu", (unsigned long)_layerArrM.count);
 //    if (_layerArrM.count > 2) {
 //        CALayer * la = [_layerArrM firstObject];
 //        [la removeFromSuperlayer];
@@ -95,11 +99,11 @@
 }
 
 #pragma mark - CALayerDelegate
-- (void)drawLayer:(CALayer *)layer inContext:(CGContextRef)ctx
+- (void)drawLayer:(TYLineLayer *)layer inContext:(CGContextRef)ctx
 {
-    NSLog(@"drawLayer begin");
     UIGraphicsPushContext( ctx );
-    [self.currentLayer.bezierPath strokeWithBlendMode:kCGBlendModeNormal alpha:1.0];
+    [HexColor(self.lineColor) setStroke];
+    [layer.bezierPath strokeWithBlendMode:kCGBlendModeNormal alpha:1.0];
     UIGraphicsPopContext();
 }
 

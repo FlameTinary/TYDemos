@@ -12,7 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TYLayerDrawView : UIView
 //画笔的颜色
-@property (nonatomic,copy) UIColor *lineColor;
+@property (nonatomic,assign) UInt32 lineColor;
+//画笔的宽度
+@property (nonatomic,assign) CGFloat lineWidth;
 //是否是橡皮擦
 @property (nonatomic,assign) BOOL isErase;
 

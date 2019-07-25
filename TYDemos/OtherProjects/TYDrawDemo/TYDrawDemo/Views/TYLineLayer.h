@@ -12,6 +12,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TYLineLayer : CALayer
+@property(nonatomic, assign) UInt32 lineColor;
+@property(nonatomic, assign) CGFloat lineWidth;
 @property(nonatomic, strong) TYBezierPath *bezierPath;
 @end
 
