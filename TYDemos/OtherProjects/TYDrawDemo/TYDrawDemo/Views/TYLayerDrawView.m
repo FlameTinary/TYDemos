@@ -29,9 +29,9 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.lineColor = 0x656565;
-        self.lineWidth = 10;
-        self.isErase = NO;
+        _lineColor = 0x656565;
+        _lineWidth = 10;
+        _isErase = NO;
         _layerArrM = [NSMutableArray array];
         _lines = [NSMutableArray array];
     }
@@ -75,6 +75,7 @@
     
     TYPoint * tpoint = [TYPoint pointWithPoint:currentPoint andType:TYPointTypeMove];
     [_currentLine addPoint:tpoint];
+    NSLog(@"%@", _currentLine.description);
     
 }
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
@@ -96,6 +97,7 @@
     TYPoint * tpoint = [TYPoint pointWithPoint:currentPoint andType:TYPointTypeEnd];
     [_currentLine addPointToEnd:tpoint];
     [_lines addObject:_currentLine];
+    NSLog(@"%@", _currentLine.description);
 }
 
 #pragma mark - CALayerDelegate

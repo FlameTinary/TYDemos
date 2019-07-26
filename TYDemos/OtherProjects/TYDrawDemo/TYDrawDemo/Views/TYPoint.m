@@ -18,4 +18,9 @@
     return p;
 }
 
+-(NSString *)description {
+    return [NSString stringWithFormat:@"{\"x\":%lf,\"y\":%lf,\"type\":%lu}", self.x, self.y, (unsigned long)self.pointType];
+}
+
+
 @end
