@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+@class TYLine;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TYLayerDrawView : UIView
@@ -18,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 //是否是橡皮擦
 @property (nonatomic,assign) BOOL isErase;
 
+
+- (void)drawLines:(NSArray<TYLine *> *)lines;
 @end
 
 NS_ASSUME_NONNULL_END
