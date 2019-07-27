@@ -1,12 +1,14 @@
 //
-//  TYPoint.m
+//  TYPoint.mm
 //  TYDrawDemo
 //
-//  Created by 田宇 on 2019/7/25.
+//  Created by 田宇 on 2019/7/27.
 //  Copyright © 2019 Sheldon. All rights reserved.
 //
 
+#import "TYPoint+WCTTableCoding.h"
 #import "TYPoint.h"
+#import <WCDB/WCDB.h>
 #import <YYModel.h>
 
 @implementation TYPoint
@@ -23,5 +25,12 @@
     return [self yy_modelToJSONString];
 }
 
+WCDB_IMPLEMENTATION(TYPoint)
+WCDB_SYNTHESIZE_COLUMN(TYPoint, pointId, "id") // Custom column name
+WCDB_SYNTHESIZE(TYPoint, pointType)
+WCDB_SYNTHESIZE(TYPoint, x)
+WCDB_SYNTHESIZE(TYPoint, y)
+
+WCDB_PRIMARY_ASC_AUTO_INCREMENT(TYPoint, pointId)
 
 @end

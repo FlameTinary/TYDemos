@@ -8,6 +8,7 @@
 
 #import "TYLine.h"
 #import <YYModel.h>
+#import "TYLine+WCTTableCoding.h"
 
 @interface TYLine()
 @property(nonatomic, readwrite, strong) TYPoint * firstPoint;
@@ -63,5 +64,24 @@
              @"pointArr" : TYPoint.class
              };
 }
+
+
+#pragma mark - config WCDB
+
+WCDB_IMPLEMENTATION(TYLine)
+
+WCDB_SYNTHESIZE_COLUMN(TYLine, lineId, "id")
+WCDB_SYNTHESIZE(TYLine, firstPoint)
+WCDB_SYNTHESIZE(TYLine, endPoint)
+WCDB_SYNTHESIZE(TYLine, color)
+WCDB_SYNTHESIZE(TYLine, width)
+WCDB_SYNTHESIZE(TYLine, points)
+
+WCDB_PRIMARY_AUTO_INCREMENT(TYLine, lineId)
+
+- (BOOL)isAutoIncrement {
+    return YES;
+}
+
 
 @end

@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class WCTDatabase;
 @protocol WCTTableCoding;
 
-typedef void(^TYDBCloseBlock)();
+typedef void(^TYDBCloseBlock)(void);
 typedef void(^TransactionBlock)();
 
 

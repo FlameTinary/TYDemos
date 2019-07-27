@@ -12,6 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TYLine : NSObject
+@property(nonatomic, readonly, assign) NSInteger lineId;
 @property(nonatomic, readonly, strong) TYPoint * firstPoint;
 @property(nonatomic, readonly, strong) TYPoint * endPoint;
 @property(nonatomic, copy, readonly) NSArray<TYPoint *> * points;

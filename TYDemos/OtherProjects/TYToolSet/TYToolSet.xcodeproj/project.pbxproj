@@ -329,7 +329,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = TY;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = Sheldon;
 				TargetAttributes = {
 					9D9312E6206A4DDC00A3877B = {
@@ -557,6 +557,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

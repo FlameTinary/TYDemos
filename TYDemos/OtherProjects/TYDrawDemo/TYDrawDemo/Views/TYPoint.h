@@ -17,6 +17,7 @@ typedef NS_ENUM(NSUInteger, TYPointType) {
 };
 
 @interface TYPoint : NSObject
+@property(nonatomic, assign) NSInteger pointId;
 @property(nonatomic, assign) TYPointType pointType;
 @property(nonatomic, assign) CGFloat x;
 @property(nonatomic, assign) CGFloat y;

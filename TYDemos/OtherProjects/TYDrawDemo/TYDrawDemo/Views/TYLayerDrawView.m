@@ -11,10 +11,6 @@
 #import "TYLine.h"
 #import <YYModel.h>
 
-#define kBezierEraseLineWidth 10
-#define kBezierLineWidth 10
-#define HexColor(s)  [UIColor colorWithRed:(((s & 0xFF0000) >> 16))/255.0 green:(((s &0xFF00) >>8))/255.0 blue:((s &0xFF))/255.0 alpha:1.0]
-
 @interface TYLayerDrawView()<CALayerDelegate>
 
 @property(nonatomic, strong) TYLine * currentLine; // 当前绘制的线
@@ -24,6 +20,10 @@
 
 @end
 
+//static const CGFloat kBezierEraseLineWidth = 10;
+static const CGFloat kBezierLineWidth = 10;
+static NSString * kTableName = @"TYLINETABLE";
+
 @implementation TYLayerDrawView
 
 - (instancetype)initWithFrame:(CGRect)frame
@@ -31,7 +31,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         _lineColor = 0x656565;
-        _lineWidth = 10;
+        _lineWidth = kBezierLineWidth;
         _isErase = NO;
         _layerArrM = [NSMutableArray array];
         _lines = [NSMutableArray array];
@@ -169,6 +169,10 @@
 
 CGPoint midPoint2(CGPoint p1, CGPoint p2) {
     return CGPointMake((p1.x + p2.x) * 0.5, (p1.y + p2.y) * 0.5);
+}
+
+UIColor * HexColor(UInt32 s) {
+    return [UIColor colorWithRed:(((s & 0xFF0000) >> 16))/255.0 green:(((s &0xFF00) >>8))/255.0 blue:((s &0xFF))/255.0 alpha:1.0];
 }
 
 
