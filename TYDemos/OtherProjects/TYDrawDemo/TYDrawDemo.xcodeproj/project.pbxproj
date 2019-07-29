@@ -97,14 +97,6 @@
 				08CC238A22E98C0600EE9969 /* TYLayerDrawView.m */,
 				08CC238C22E98E0100EE9969 /* TYLineLayer.h */,
 				08CC238D22E98E0100EE9969 /* TYLineLayer.m */,
-				08CC238F22E99C4B00EE9969 /* TYLine.h */,
-				08CC239022E99C4B00EE9969 /* TYLine.mm */,
-				08CC239822EC2A2D00EE9969 /* TYLine+WCTTableCoding.h */,
-				08CC239922EC306200EE9969 /* TYLine+WCTColumnCoding.mm */,
-				08CC239522E99C9900EE9969 /* TYPoint.h */,
-				08CC239B22EC311500EE9969 /* TYPoint.mm */,
-				08CC239C22EC311500EE9969 /* TYPoint+WCTTableCoding.h */,
-				08CC239E22EC31CE00EE9969 /* TYPoint+WCTColumnCoding.mm */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -126,6 +118,14 @@
 		08276BFA22E71688000047C6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				08CC238F22E99C4B00EE9969 /* TYLine.h */,
+				08CC239022E99C4B00EE9969 /* TYLine.mm */,
+				08CC239822EC2A2D00EE9969 /* TYLine+WCTTableCoding.h */,
+				08CC239922EC306200EE9969 /* TYLine+WCTColumnCoding.mm */,
+				08CC239522E99C9900EE9969 /* TYPoint.h */,
+				08CC239B22EC311500EE9969 /* TYPoint.mm */,
+				08CC239C22EC311500EE9969 /* TYPoint+WCTTableCoding.h */,
+				08CC239E22EC31CE00EE9969 /* TYPoint+WCTColumnCoding.mm */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -441,7 +441,6 @@
 					"\"${PODS_ROOT}/Headers/Public/WCDBOptimizedSQLCipher\"",
 					"\"${PODS_ROOT}/Headers/Public/YYModel\"",
 					"\"${PODS_ROOT}/Headers/Public/YYText\"",
-					"\"$(SRCROOT)/../../TYDemos\"",
 				);
 				INFOPLIST_FILE = TYDrawDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -470,7 +469,6 @@
 					"\"${PODS_ROOT}/Headers/Public/WCDBOptimizedSQLCipher\"",
 					"\"${PODS_ROOT}/Headers/Public/YYModel\"",
 					"\"${PODS_ROOT}/Headers/Public/YYText\"",
-					"\"$(SRCROOT)/../../TYDemos\"",
 				);
 				INFOPLIST_FILE = TYDrawDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
