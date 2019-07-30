@@ -27,7 +27,8 @@
     fileLogger.logFileManager.maximumNumberOfLogFiles = 7;
     [DDLog addLogger:fileLogger];
     
-    DDLogInfo(@"log path is: %@", fileLogger.currentLogFileInfo.filePath);
+    //DDLogInfo(@"log path is: %@", fileLogger.currentLogFileInfo.filePath);
+    DDLogInfo(@"App is started");
     
 //    DDLogVerbose(@"verbose");
 //    DDLogDebug(@"Debug");
