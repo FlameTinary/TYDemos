@@ -1,0 +1,20 @@
+//
+//  PrefixHeader.pch
+//  TYDrawDemo
+//
+//  Created by 田宇 on 2019/7/30.
+//  Copyright © 2019 Sheldon. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <CocoaLumberjack.h>
+
+#ifdef DEBUG
+static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
+#else
+static const DDLogLevel DDLogLevel = DDLogLevelError;
+#endif
+
+#endif /* PrefixHeader_pch */

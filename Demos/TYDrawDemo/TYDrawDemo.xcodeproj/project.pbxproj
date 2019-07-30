@@ -60,7 +60,7 @@
 		08CC239E22EC31CE00EE9969 /* TYPoint+WCTColumnCoding.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "TYPoint+WCTColumnCoding.mm"; sourceTree = "<group>"; };
 		08CC23CB22EFF88A00EE9969 /* TYLoggerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYLoggerManager.h; sourceTree = "<group>"; };
 		08CC23CC22EFF88A00EE9969 /* TYLoggerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYLoggerManager.m; sourceTree = "<group>"; };
-		08CC23CE22EFF93B00EE9969 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		08F63B4A22F02DDA00545F9C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		9E5F4C5A3536AF085A802EAF /* Pods-TYDrawDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYDrawDemo.debug.xcconfig"; path = "Target Support Files/Pods-TYDrawDemo/Pods-TYDrawDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		F445B4F1CFEB3787AA2DB1E1 /* Pods-TYDrawDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYDrawDemo.release.xcconfig"; path = "Target Support Files/Pods-TYDrawDemo/Pods-TYDrawDemo.release.xcconfig"; sourceTree = "<group>"; };
 		FE17A016933419C2ACF5E0E8 /* libPods-TYDrawDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TYDrawDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				08CC23CA22EFF86300EE9969 /* TYLogger */,
+				08F63B4A22F02DDA00545F9C /* PrefixHeader.pch */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -178,7 +179,6 @@
 			children = (
 				08CC23CB22EFF88A00EE9969 /* TYLoggerManager.h */,
 				08CC23CC22EFF88A00EE9969 /* TYLoggerManager.m */,
-				08CC23CE22EFF93B00EE9969 /* PrefixHeader.pch */,
 			);
 			path = TYLogger;
 			sourceTree = "<group>";
@@ -370,6 +370,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -427,6 +429,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -448,6 +452,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CC9XV3GRSV;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TYDrawDemo/Others/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
@@ -476,6 +482,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CC9XV3GRSV;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TYDrawDemo/Others/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
