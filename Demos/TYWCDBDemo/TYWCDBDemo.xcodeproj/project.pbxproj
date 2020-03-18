@@ -13,6 +13,7 @@
 		08CC23BD22EFF29100EE9969 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08CC23BC22EFF29100EE9969 /* Assets.xcassets */; };
 		08CC23C022EFF29100EE9969 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08CC23BE22EFF29100EE9969 /* LaunchScreen.storyboard */; };
 		08CC23C322EFF29100EE9969 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CC23C222EFF29100EE9969 /* main.m */; };
+		6CDF1C613459C4B690973BF4 /* libPods-TYWCDBDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF17A906DBAAA42B557A03EC /* libPods-TYWCDBDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		08CC23BF22EFF29100EE9969 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08CC23C122EFF29100EE9969 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08CC23C222EFF29100EE9969 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		33A52783B3C831D08F744F32 /* Pods-TYWCDBDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYWCDBDemo.release.xcconfig"; path = "Target Support Files/Pods-TYWCDBDemo/Pods-TYWCDBDemo.release.xcconfig"; sourceTree = "<group>"; };
+		BF17A906DBAAA42B557A03EC /* libPods-TYWCDBDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TYWCDBDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB7A55ECD46385CBDCA53AEA /* Pods-TYWCDBDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYWCDBDemo.debug.xcconfig"; path = "Target Support Files/Pods-TYWCDBDemo/Pods-TYWCDBDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CDF1C613459C4B690973BF4 /* libPods-TYWCDBDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				08CC23B222EFF29000EE9969 /* TYWCDBDemo */,
 				08CC23B122EFF29000EE9969 /* Products */,
+				702CDD0824CA3A4FB66630BD /* Pods */,
+				AFD58D868FAF95036725BA7F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +78,24 @@
 			path = TYWCDBDemo;
 			sourceTree = "<group>";
 		};
+		702CDD0824CA3A4FB66630BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB7A55ECD46385CBDCA53AEA /* Pods-TYWCDBDemo.debug.xcconfig */,
+				33A52783B3C831D08F744F32 /* Pods-TYWCDBDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../../Pods;
+			sourceTree = "<group>";
+		};
+		AFD58D868FAF95036725BA7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF17A906DBAAA42B557A03EC /* libPods-TYWCDBDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,6 +103,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08CC23C622EFF29100EE9969 /* Build configuration list for PBXNativeTarget "TYWCDBDemo" */;
 			buildPhases = (
+				A6442147A94232F677B588F2 /* [CP] Check Pods Manifest.lock */,
 				08CC23AC22EFF29000EE9969 /* Sources */,
 				08CC23AD22EFF29000EE9969 /* Frameworks */,
 				08CC23AE22EFF29000EE9969 /* Resources */,
@@ -135,6 +161,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A6442147A94232F677B588F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TYWCDBDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		08CC23AC22EFF29000EE9969 /* Sources */ = {
@@ -283,6 +334,7 @@
 		};
 		08CC23C722EFF29100EE9969 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB7A55ECD46385CBDCA53AEA /* Pods-TYWCDBDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +352,7 @@
 		};
 		08CC23C822EFF29100EE9969 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33A52783B3C831D08F744F32 /* Pods-TYWCDBDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

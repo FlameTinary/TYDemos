@@ -27,6 +27,12 @@ inhibit_all_warnings!
 
 # end
 
+target 'TYWCDBDemo' do
+  project 'Demos/TYWCDBDemo/TYWCDBDemo'
+  
+  pod 'WCDB'
+end
+
 target 'TYDrawDemo' do
 
   proj = 'TYDrawDemo'

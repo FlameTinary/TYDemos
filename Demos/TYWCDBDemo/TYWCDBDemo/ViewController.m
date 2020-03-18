@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <WCDB/WCDB.h>
 
 @interface ViewController ()
 
