@@ -31,6 +31,7 @@ target 'TYWCDBDemo' do
   project 'Demos/TYWCDBDemo/TYWCDBDemo'
   
   pod 'WCDB'
+  pod 'Masonry'
 end
 
 target 'TYDrawDemo' do

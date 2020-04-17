@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		085078112449A6B100B71F35 /* TYNoInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 085078102449A6B100B71F35 /* TYNoInfoView.m */; };
+		085078162449B4A200B71F35 /* TeacherModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 085078152449B4A200B71F35 /* TeacherModel.mm */; };
 		08CC23B522EFF29000EE9969 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CC23B422EFF29000EE9969 /* AppDelegate.m */; };
-		08CC23B822EFF29000EE9969 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CC23B722EFF29000EE9969 /* ViewController.m */; };
+		08CC23B822EFF29000EE9969 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 08CC23B722EFF29000EE9969 /* ViewController.mm */; };
 		08CC23BB22EFF29000EE9969 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08CC23B922EFF29000EE9969 /* Main.storyboard */; };
 		08CC23BD22EFF29100EE9969 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08CC23BC22EFF29100EE9969 /* Assets.xcassets */; };
 		08CC23C022EFF29100EE9969 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08CC23BE22EFF29100EE9969 /* LaunchScreen.storyboard */; };
@@ -17,11 +19,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		08CC23B022EFF29000EE9969 /* TYWCDBDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TYWCDBDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0850780F2449A6B100B71F35 /* TYNoInfoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYNoInfoView.h; sourceTree = "<group>"; };
+		085078102449A6B100B71F35 /* TYNoInfoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYNoInfoView.m; sourceTree = "<group>"; };
+		085078132449B4A200B71F35 /* TeacherModel+WCTTableCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TeacherModel+WCTTableCoding.h"; sourceTree = "<group>"; };
+		085078142449B4A200B71F35 /* TeacherModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeacherModel.h; sourceTree = "<group>"; };
+		085078152449B4A200B71F35 /* TeacherModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TeacherModel.mm; sourceTree = "<group>"; };
+		08CC23B022EFF29000EE9969 /* WCDB测试.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WCDB测试.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08CC23B322EFF29000EE9969 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		08CC23B422EFF29000EE9969 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		08CC23B622EFF29000EE9969 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		08CC23B722EFF29000EE9969 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		08CC23B722EFF29000EE9969 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		08CC23BA22EFF29000EE9969 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		08CC23BC22EFF29100EE9969 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08CC23BF22EFF29100EE9969 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -44,6 +51,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0850780E2449A68900B71F35 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0850780F2449A6B100B71F35 /* TYNoInfoView.h */,
+				085078102449A6B100B71F35 /* TYNoInfoView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		085078122449B49900B71F35 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				085078142449B4A200B71F35 /* TeacherModel.h */,
+				085078152449B4A200B71F35 /* TeacherModel.mm */,
+				085078132449B4A200B71F35 /* TeacherModel+WCTTableCoding.h */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		08CC23A722EFF29000EE9969 = {
 			isa = PBXGroup;
 			children = (
@@ -57,7 +83,7 @@
 		08CC23B122EFF29000EE9969 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				08CC23B022EFF29000EE9969 /* TYWCDBDemo.app */,
+				08CC23B022EFF29000EE9969 /* WCDB测试.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,10 +91,12 @@
 		08CC23B222EFF29000EE9969 /* TYWCDBDemo */ = {
 			isa = PBXGroup;
 			children = (
+				085078122449B49900B71F35 /* Models */,
+				0850780E2449A68900B71F35 /* Views */,
 				08CC23B322EFF29000EE9969 /* AppDelegate.h */,
 				08CC23B422EFF29000EE9969 /* AppDelegate.m */,
 				08CC23B622EFF29000EE9969 /* ViewController.h */,
-				08CC23B722EFF29000EE9969 /* ViewController.m */,
+				08CC23B722EFF29000EE9969 /* ViewController.mm */,
 				08CC23B922EFF29000EE9969 /* Main.storyboard */,
 				08CC23BC22EFF29100EE9969 /* Assets.xcassets */,
 				08CC23BE22EFF29100EE9969 /* LaunchScreen.storyboard */,
@@ -114,7 +142,7 @@
 			);
 			name = TYWCDBDemo;
 			productName = TYWCDBDemo;
-			productReference = 08CC23B022EFF29000EE9969 /* TYWCDBDemo.app */;
+			productReference = 08CC23B022EFF29000EE9969 /* WCDB测试.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -192,8 +220,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08CC23B822EFF29000EE9969 /* ViewController.m in Sources */,
+				085078162449B4A200B71F35 /* TeacherModel.mm in Sources */,
+				08CC23B822EFF29000EE9969 /* ViewController.mm in Sources */,
 				08CC23C322EFF29100EE9969 /* main.m in Sources */,
+				085078112449A6B100B71F35 /* TYNoInfoView.m in Sources */,
 				08CC23B522EFF29000EE9969 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,7 +375,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = top.sheldon.TYWCDBDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "WCDB测试";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -363,7 +393,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = top.sheldon.TYWCDBDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "WCDB测试";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
