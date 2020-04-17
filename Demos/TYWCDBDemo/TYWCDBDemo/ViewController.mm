@@ -11,6 +11,7 @@
 #import "Masonry.h"
 #import "TYNoInfoView.h"
 #import "TeacherModel.h"
+#import "TYDatabaseInfoVC.h"
 
 #define PATH_OF_DOCUMENT    [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]
 
@@ -79,6 +80,15 @@
     NSString *dbName = self.databaseArray[indexPath.row];
     cell.textLabel.text = dbName;
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSString* path = [PATH_OF_DOCUMENT stringByAppendingPathComponent:@"rootDBPath"];
+    NSString *dbName = self.databaseArray[indexPath.row];
+    path = [path stringByAppendingPathComponent:dbName];
+    TYDatabaseInfoVC * databaseInfoVC = [[TYDatabaseInfoVC alloc] init];
+    databaseInfoVC.databasePath = path;
+    [self.navigationController pushViewController:databaseInfoVC animated:YES];
 }
 
 - (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

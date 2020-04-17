@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		085078112449A6B100B71F35 /* TYNoInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 085078102449A6B100B71F35 /* TYNoInfoView.m */; };
 		085078162449B4A200B71F35 /* TeacherModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 085078152449B4A200B71F35 /* TeacherModel.mm */; };
+		085078192449B86900B71F35 /* TYDatabaseInfoVC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 085078182449B86900B71F35 /* TYDatabaseInfoVC.mm */; };
 		08CC23B522EFF29000EE9969 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CC23B422EFF29000EE9969 /* AppDelegate.m */; };
 		08CC23B822EFF29000EE9969 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 08CC23B722EFF29000EE9969 /* ViewController.mm */; };
 		08CC23BB22EFF29000EE9969 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08CC23B922EFF29000EE9969 /* Main.storyboard */; };
@@ -24,6 +25,8 @@
 		085078132449B4A200B71F35 /* TeacherModel+WCTTableCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TeacherModel+WCTTableCoding.h"; sourceTree = "<group>"; };
 		085078142449B4A200B71F35 /* TeacherModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeacherModel.h; sourceTree = "<group>"; };
 		085078152449B4A200B71F35 /* TeacherModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TeacherModel.mm; sourceTree = "<group>"; };
+		085078172449B86900B71F35 /* TYDatabaseInfoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYDatabaseInfoVC.h; sourceTree = "<group>"; };
+		085078182449B86900B71F35 /* TYDatabaseInfoVC.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TYDatabaseInfoVC.mm; sourceTree = "<group>"; };
 		08CC23B022EFF29000EE9969 /* WCDB测试.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WCDB测试.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08CC23B322EFF29000EE9969 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		08CC23B422EFF29000EE9969 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -97,6 +100,8 @@
 				08CC23B422EFF29000EE9969 /* AppDelegate.m */,
 				08CC23B622EFF29000EE9969 /* ViewController.h */,
 				08CC23B722EFF29000EE9969 /* ViewController.mm */,
+				085078172449B86900B71F35 /* TYDatabaseInfoVC.h */,
+				085078182449B86900B71F35 /* TYDatabaseInfoVC.mm */,
 				08CC23B922EFF29000EE9969 /* Main.storyboard */,
 				08CC23BC22EFF29100EE9969 /* Assets.xcassets */,
 				08CC23BE22EFF29100EE9969 /* LaunchScreen.storyboard */,
@@ -220,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				085078192449B86900B71F35 /* TYDatabaseInfoVC.mm in Sources */,
 				085078162449B4A200B71F35 /* TeacherModel.mm in Sources */,
 				08CC23B822EFF29000EE9969 /* ViewController.mm in Sources */,
 				08CC23C322EFF29100EE9969 /* main.m in Sources */,
