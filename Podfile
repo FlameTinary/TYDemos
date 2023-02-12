@@ -27,6 +27,13 @@ inhibit_all_warnings!
 
 # end
 
+target 'TYAVPlayerDemo' do
+  proj = 'TYAVPlayerDemo'
+  workspace 'Demos/TYDemos.xcworkspace'
+  project 'Demos' + '/' + proj + '/' + proj + '.xcodeproj'
+  pod 'Masonry'
+end
+
 target 'TYWCDBDemo' do
   project 'Demos/TYWCDBDemo/TYWCDBDemo'
   

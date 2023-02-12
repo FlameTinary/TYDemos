@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		0802025822D46E7E00553B93 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0802025722D46E7E00553B93 /* AppDelegate.m */; };
 		0802025B22D46E7E00553B93 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0802025A22D46E7E00553B93 /* ViewController.m */; };
-		0802025E22D46E7E00553B93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0802025C22D46E7E00553B93 /* Main.storyboard */; };
 		0802026022D46E7E00553B93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0802025F22D46E7E00553B93 /* Assets.xcassets */; };
 		0802026322D46E7E00553B93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0802026122D46E7E00553B93 /* LaunchScreen.storyboard */; };
 		0802026622D46E7E00553B93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0802026522D46E7E00553B93 /* main.m */; };
+		08C9BD9A2999339600745309 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C9BD992999339600745309 /* SceneDelegate.m */; };
 		6514B7DA97D61D46F58FEB9D /* libPods-TYAVPlayerDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B2534E7725A7FCAA2AE65EB /* libPods-TYAVPlayerDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -22,11 +22,13 @@
 		0802025722D46E7E00553B93 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0802025922D46E7E00553B93 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		0802025A22D46E7E00553B93 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		0802025D22D46E7E00553B93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0802025F22D46E7E00553B93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0802026222D46E7E00553B93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0802026422D46E7E00553B93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0802026522D46E7E00553B93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		08C9BD982999339500745309 /* SceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		08C9BD992999339600745309 /* SceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		08C9BD9B299937B000745309 /* mmj.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = mmj.mp4; sourceTree = "<group>"; };
 		687CE1D8B3135B13F1F0AABF /* Pods-TYAVPlayerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYAVPlayerDemo.debug.xcconfig"; path = "Target Support Files/Pods-TYAVPlayerDemo/Pods-TYAVPlayerDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		787A582799DE89879C2AFD97 /* Pods-TYAVPlayerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYAVPlayerDemo.release.xcconfig"; path = "Target Support Files/Pods-TYAVPlayerDemo/Pods-TYAVPlayerDemo.release.xcconfig"; sourceTree = "<group>"; };
 		9B2534E7725A7FCAA2AE65EB /* libPods-TYAVPlayerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TYAVPlayerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,11 +77,13 @@
 		0802025522D46E7E00553B93 /* TYAVPlayerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				08C9BD9B299937B000745309 /* mmj.mp4 */,
 				0802025622D46E7E00553B93 /* AppDelegate.h */,
 				0802025722D46E7E00553B93 /* AppDelegate.m */,
+				08C9BD982999339500745309 /* SceneDelegate.h */,
+				08C9BD992999339600745309 /* SceneDelegate.m */,
 				0802025922D46E7E00553B93 /* ViewController.h */,
 				0802025A22D46E7E00553B93 /* ViewController.m */,
-				0802025C22D46E7E00553B93 /* Main.storyboard */,
 				0802025F22D46E7E00553B93 /* Assets.xcassets */,
 				0802026122D46E7E00553B93 /* LaunchScreen.storyboard */,
 				0802026422D46E7E00553B93 /* Info.plist */,
@@ -157,7 +161,6 @@
 			files = (
 				0802026322D46E7E00553B93 /* LaunchScreen.storyboard in Resources */,
 				0802026022D46E7E00553B93 /* Assets.xcassets in Resources */,
-				0802025E22D46E7E00553B93 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,20 +199,13 @@
 				0802025B22D46E7E00553B93 /* ViewController.m in Sources */,
 				0802026622D46E7E00553B93 /* main.m in Sources */,
 				0802025822D46E7E00553B93 /* AppDelegate.m in Sources */,
+				08C9BD9A2999339600745309 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0802025C22D46E7E00553B93 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0802025D22D46E7E00553B93 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0802026122D46E7E00553B93 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -338,15 +334,18 @@
 			baseConfigurationReference = 687CE1D8B3135B13F1F0AABF /* Pods-TYAVPlayerDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CC9XV3GRSV;
+				DEVELOPMENT_TEAM = CJ5L2XW65B;
 				INFOPLIST_FILE = TYAVPlayerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = top.sheldon.TYAVPlayerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -356,15 +355,18 @@
 			baseConfigurationReference = 787A582799DE89879C2AFD97 /* Pods-TYAVPlayerDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CC9XV3GRSV;
+				DEVELOPMENT_TEAM = CJ5L2XW65B;
 				INFOPLIST_FILE = TYAVPlayerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = top.sheldon.TYAVPlayerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

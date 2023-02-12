@@ -2,7 +2,7 @@
 //  TeacherModel+WCTTableCoding.h
 //  wcdbTest
 //
-//  Created by 田宇 on 2020/1/19.
+//  Created by Sheldon on 2020/1/19.
 //  Copyright © 2020 sheldon. All rights reserved.
 //
 

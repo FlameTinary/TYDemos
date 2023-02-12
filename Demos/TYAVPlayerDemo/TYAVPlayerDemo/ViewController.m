@@ -2,7 +2,7 @@
 //  ViewController.m
 //  TYAVPlayerDemo
 //
-//  Created by 田宇 on 2019/7/9.
+//  Created by Sheldon on 2019/7/9.
 //  Copyright © 2019 Sheldon. All rights reserved.
 //
 
@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.navigationItem.title = @"AVPlayer Demo";
+    self.view.backgroundColor = UIColor.whiteColor;
 }
 
 /**
