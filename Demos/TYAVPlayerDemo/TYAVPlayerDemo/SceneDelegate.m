@@ -6,7 +6,7 @@
 //
 
 #import "SceneDelegate.h"
-#import "ViewController.h"
+#import "TYAVPlayerDemo-swift.h"
 
 @interface SceneDelegate ()
 
@@ -19,7 +19,7 @@
     UIWindowScene *windowScene = (UIWindowScene *)scene;
     self.window =  [[UIWindow alloc] initWithWindowScene:windowScene];
     self.window.frame = windowScene.coordinateSpace.bounds;
-    UINavigationController * nav = [[UINavigationController alloc] initWithRootViewController:ViewController.new];
+    UINavigationController * nav = [[UINavigationController alloc] initWithRootViewController:TYBaseViewController.new];
 //    [nav.navigationBar setBarTintColor:UIColor.whiteColor];
 //    [nav.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor blackColor], NSForegroundColorAttributeName, nil]];
     self.window.rootViewController = nav;
