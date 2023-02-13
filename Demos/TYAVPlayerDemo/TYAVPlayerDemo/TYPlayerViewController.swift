@@ -10,6 +10,8 @@ import UIKit
 import SnapKit
 import AVKit
 
+
+/// 简单使用AVPlayerController
 class TYPlayerViewController: UIViewController {
     
     var urlString : String
@@ -51,6 +53,7 @@ class TYPlayerViewController: UIViewController {
     }
     
     override func viewDidLoad() {
+        title = "AVPlayerViewController Demo";
         view.backgroundColor = .white
         view.addSubview(btn)
         btn.snp.makeConstraints { make in

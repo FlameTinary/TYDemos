@@ -13,6 +13,7 @@
 		0802026622D46E7E00553B93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0802026522D46E7E00553B93 /* main.m */; };
 		08C21E45299A2D0000B12AA4 /* TYPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C21E44299A2D0000B12AA4 /* TYPlayerViewController.swift */; };
 		08C21E47299A414700B12AA4 /* TYBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C21E46299A414700B12AA4 /* TYBaseViewController.swift */; };
+		08C21E49299A8EB400B12AA4 /* TYPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C21E48299A8EB400B12AA4 /* TYPlayerController.swift */; };
 		08C9BD9A2999339600745309 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C9BD992999339600745309 /* SceneDelegate.m */; };
 		6514B7DA97D61D46F58FEB9D /* libPods-TYAVPlayerDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B2534E7725A7FCAA2AE65EB /* libPods-TYAVPlayerDemo.a */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,7 @@
 		08C21E43299A2CFF00B12AA4 /* TYAVPlayerDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TYAVPlayerDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		08C21E44299A2D0000B12AA4 /* TYPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYPlayerViewController.swift; sourceTree = "<group>"; };
 		08C21E46299A414700B12AA4 /* TYBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYBaseViewController.swift; sourceTree = "<group>"; };
+		08C21E48299A8EB400B12AA4 /* TYPlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYPlayerController.swift; sourceTree = "<group>"; };
 		08C9BD982999339500745309 /* SceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		08C9BD992999339600745309 /* SceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		687CE1D8B3135B13F1F0AABF /* Pods-TYAVPlayerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYAVPlayerDemo.debug.xcconfig"; path = "Target Support Files/Pods-TYAVPlayerDemo/Pods-TYAVPlayerDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				08C9BD992999339600745309 /* SceneDelegate.m */,
 				08C21E46299A414700B12AA4 /* TYBaseViewController.swift */,
 				08C21E44299A2D0000B12AA4 /* TYPlayerViewController.swift */,
+				08C21E48299A8EB400B12AA4 /* TYPlayerController.swift */,
 				0802025F22D46E7E00553B93 /* Assets.xcassets */,
 				0802026122D46E7E00553B93 /* LaunchScreen.storyboard */,
 				0802026422D46E7E00553B93 /* Info.plist */,
@@ -203,6 +206,7 @@
 				0802025822D46E7E00553B93 /* AppDelegate.m in Sources */,
 				08C21E47299A414700B12AA4 /* TYBaseViewController.swift in Sources */,
 				08C9BD9A2999339600745309 /* SceneDelegate.m in Sources */,
+				08C21E49299A8EB400B12AA4 /* TYPlayerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
