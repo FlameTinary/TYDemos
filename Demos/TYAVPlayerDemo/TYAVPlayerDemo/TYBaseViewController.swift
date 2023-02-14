@@ -89,10 +89,8 @@ extension TYBaseViewController: UITableViewDelegate, UITableViewDataSource {
             switch indexPath.row {
             case 0:
                 controller = TYPlayerViewController(urlString: url)
-            case 1:
-                controller = TYPlayerController(urlString: url)
             default:
-                controller = UIViewController()
+                controller = TYPlayerController(urlString: url)
             }
             navigationController?.pushViewController(controller, animated: true)
         }

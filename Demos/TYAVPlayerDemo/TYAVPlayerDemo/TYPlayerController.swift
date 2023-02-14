@@ -59,8 +59,12 @@ class TYPlayerController : UIViewController {
     }
     
     deinit {
-        playerLayer?.removeObserver(self, forKeyPath: "status")
-        playerLayer?.removeObserver(self, forKeyPath: "loadedTimeRanges")
+        player?.currentItem!.removeObserver(self, forKeyPath: "status")
+        player?.currentItem!.removeObserver(self, forKeyPath: "loadedTimeRanges")
+        player?.currentItem!.removeObserver(self, forKeyPath: "playbackBufferEmpty")
+        player?.currentItem!.removeObserver(self, forKeyPath: "playbackLikelyToKeepUp")
+        
+        NotificationCenter.default.removeObserver(self)
     }
     
     override func viewDidLoad() {
@@ -125,10 +129,35 @@ class TYPlayerController : UIViewController {
             //获取播放总时长
 //            let duration = CMTimeGetSeconds((self?.player?.currentItem!.duration)!)
             // 时间比例
-            let sliderValue = Float(currentTime/self!.duration)
-            self?.progressView.progress = sliderValue
-            self?.slider.value = sliderValue
+            if let duration = self?.duration {
+                let sliderValue = Float(currentTime/duration)
+                self?.progressView.progress = sliderValue
+                self?.slider.value = sliderValue
+            }
+            
         })
+        /**
+         //音频中断通知
+         AVAudioSessionInterruptionNotification
+         //音频线路改变（耳机插入、拔出）
+         AVAudioSessionSilenceSecondaryAudioHintNotification
+         //媒体服务器终止、重启
+         AVAudioSessionMediaServicesWereLostNotification
+         AVAudioSessionMediaServicesWereResetNotification
+         //其他app的音频开始播放或者停止时
+         AVAudioSessionSilenceSecondaryAudioHintNotification
+         
+         //播放结束
+         AVPlayerItemDidPlayToEndTimeNotification
+         //进行跳转
+         AVPlayerItemTimeJumpedNotification
+         //异常中断通知
+         AVPlayerItemPlaybackStalledNotification
+         //播放失败
+         AVPlayerItemFailedToPlayToEndTimeNotificati
+         */
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(playToEndTime), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: nil)
     }
     
     
@@ -178,4 +207,10 @@ class TYPlayerController : UIViewController {
             player?.play()
         }
     }
+    
+    
+       
+       @objc func playToEndTime(){
+           print("播放完成")
+       }
 }
