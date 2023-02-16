@@ -14,6 +14,10 @@
 		08C21E45299A2D0000B12AA4 /* TYPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C21E44299A2D0000B12AA4 /* TYPlayerViewController.swift */; };
 		08C21E47299A414700B12AA4 /* TYBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C21E46299A414700B12AA4 /* TYBaseViewController.swift */; };
 		08C21E49299A8EB400B12AA4 /* TYPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C21E48299A8EB400B12AA4 /* TYPlayerController.swift */; };
+		08C21E4B299DD1A000B12AA4 /* TYCompositionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C21E4A299DD1A000B12AA4 /* TYCompositionController.swift */; };
+		08C21E4D299DD2F200B12AA4 /* TYPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C21E4C299DD2F200B12AA4 /* TYPlayerView.swift */; };
+		08C21E4F299DD5E000B12AA4 /* TYPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C21E4E299DD5E000B12AA4 /* TYPlayerManager.swift */; };
+		08C21E51299DD88000B12AA4 /* TYPlayerControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C21E50299DD88000B12AA4 /* TYPlayerControl.swift */; };
 		08C9BD9A2999339600745309 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C9BD992999339600745309 /* SceneDelegate.m */; };
 		6514B7DA97D61D46F58FEB9D /* libPods-TYAVPlayerDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B2534E7725A7FCAA2AE65EB /* libPods-TYAVPlayerDemo.a */; };
 /* End PBXBuildFile section */
@@ -30,6 +34,10 @@
 		08C21E44299A2D0000B12AA4 /* TYPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYPlayerViewController.swift; sourceTree = "<group>"; };
 		08C21E46299A414700B12AA4 /* TYBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYBaseViewController.swift; sourceTree = "<group>"; };
 		08C21E48299A8EB400B12AA4 /* TYPlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYPlayerController.swift; sourceTree = "<group>"; };
+		08C21E4A299DD1A000B12AA4 /* TYCompositionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYCompositionController.swift; sourceTree = "<group>"; };
+		08C21E4C299DD2F200B12AA4 /* TYPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYPlayerView.swift; sourceTree = "<group>"; };
+		08C21E4E299DD5E000B12AA4 /* TYPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYPlayerManager.swift; sourceTree = "<group>"; };
+		08C21E50299DD88000B12AA4 /* TYPlayerControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYPlayerControl.swift; sourceTree = "<group>"; };
 		08C9BD982999339500745309 /* SceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		08C9BD992999339600745309 /* SceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		687CE1D8B3135B13F1F0AABF /* Pods-TYAVPlayerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYAVPlayerDemo.debug.xcconfig"; path = "Target Support Files/Pods-TYAVPlayerDemo/Pods-TYAVPlayerDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -85,8 +93,12 @@
 				08C9BD982999339500745309 /* SceneDelegate.h */,
 				08C9BD992999339600745309 /* SceneDelegate.m */,
 				08C21E46299A414700B12AA4 /* TYBaseViewController.swift */,
+				08C21E4A299DD1A000B12AA4 /* TYCompositionController.swift */,
 				08C21E44299A2D0000B12AA4 /* TYPlayerViewController.swift */,
 				08C21E48299A8EB400B12AA4 /* TYPlayerController.swift */,
+				08C21E4C299DD2F200B12AA4 /* TYPlayerView.swift */,
+				08C21E4E299DD5E000B12AA4 /* TYPlayerManager.swift */,
+				08C21E50299DD88000B12AA4 /* TYPlayerControl.swift */,
 				0802025F22D46E7E00553B93 /* Assets.xcassets */,
 				0802026122D46E7E00553B93 /* LaunchScreen.storyboard */,
 				0802026422D46E7E00553B93 /* Info.plist */,
@@ -202,11 +214,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				08C21E45299A2D0000B12AA4 /* TYPlayerViewController.swift in Sources */,
+				08C21E4F299DD5E000B12AA4 /* TYPlayerManager.swift in Sources */,
 				0802026622D46E7E00553B93 /* main.m in Sources */,
+				08C21E4D299DD2F200B12AA4 /* TYPlayerView.swift in Sources */,
 				0802025822D46E7E00553B93 /* AppDelegate.m in Sources */,
 				08C21E47299A414700B12AA4 /* TYBaseViewController.swift in Sources */,
 				08C9BD9A2999339600745309 /* SceneDelegate.m in Sources */,
+				08C21E51299DD88000B12AA4 /* TYPlayerControl.swift in Sources */,
 				08C21E49299A8EB400B12AA4 /* TYPlayerController.swift in Sources */,
+				08C21E4B299DD1A000B12AA4 /* TYCompositionController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

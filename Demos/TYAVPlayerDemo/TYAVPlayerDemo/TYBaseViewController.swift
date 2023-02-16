@@ -22,7 +22,7 @@ class TYBaseViewController: UIViewController {
     private var modelList = [
         ListModel(title: "简单使用AVPlayerViewController", urlString: "http://vfx.mtime.cn/Video/2019/02/04/mp4/190204084208765161.mp4"),
         ListModel(title: "使用AVPlayer播放视频", urlString: "http://vfx.mtime.cn/Video/2019/03/21/mp4/190321153853126488.mp4"),
-        ListModel(title: "简单使用AVPlayerViewController", urlString: "http://vfx.mtime.cn/Video/2019/03/19/mp4/190319222227698228.mp4"),
+        ListModel(title: "简单使用AVMutableComposition", urlString: "http://vfx.mtime.cn/Video/2019/03/19/mp4/190319222227698228.mp4"),
         
         ListModel(title: "简单使用AVPlayerViewController", urlString: "http://vfx.mtime.cn/Video/2019/03/19/mp4/190319212559089721.mp4"),
         
@@ -89,6 +89,10 @@ extension TYBaseViewController: UITableViewDelegate, UITableViewDataSource {
             switch indexPath.row {
             case 0:
                 controller = TYPlayerViewController(urlString: url)
+            case 1:
+                controller = TYPlayerController(urlString: url)
+            case 2:
+                controller = TYPlayerController(urlString: url)
             default:
                 controller = TYPlayerController(urlString: url)
             }
