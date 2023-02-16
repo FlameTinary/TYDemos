@@ -9,6 +9,11 @@
 import Foundation
 import AVKit
 
+enum PlayStatus {
+    case play
+    case pause
+}
+
 class TYPlayerManager: NSObject {
     var url : String?
     // 播放器
@@ -17,6 +22,8 @@ class TYPlayerManager: NSObject {
     private(set) var playerLayer : AVPlayerLayer?
     // 当前正在播放的item
     private(set) var currentPlayerItem : AVPlayerItem?
+    // 播放状态
+    private(set) var status : PlayStatus = .pause
     // 播放总时长
     private(set) var duration : Float64 = 0.0
     // 当前播放时间
@@ -135,9 +142,11 @@ class TYPlayerManager: NSObject {
     }
     func play() {
         player?.play()
+        status = .play
     }
     func pause() {
         player?.pause()
+        status = .pause
     }
     
     func seek(to time: CMTime) {
