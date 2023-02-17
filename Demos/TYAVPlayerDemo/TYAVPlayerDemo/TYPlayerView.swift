@@ -12,7 +12,14 @@ import SnapKit
 
 class TYPlayerView: UIView {
     
-    weak var manager: TYPlayerManager?
+    weak var manager: TYPlayerManager? {
+        didSet {
+            if let layer = manager?.playerLayer {
+                layer.frame = self.bounds
+                self.layer.insertSublayer(layer, at: 0)
+            }
+        }
+    }
     
     private lazy var playBtn = {
         let btn = UIButton(type: .system)
@@ -29,8 +36,8 @@ class TYPlayerView: UIView {
         return slider
     }()
     
-    init() {
-        super.init(frame: .zero)
+    override init(frame: CGRect) {
+        super.init(frame: frame)
         setupSubviews()
     }
     

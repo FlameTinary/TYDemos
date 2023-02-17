@@ -92,7 +92,7 @@ extension TYBaseViewController: UITableViewDelegate, UITableViewDataSource {
             case 1:
                 controller = TYPlayerController(urlString: url)
             case 2:
-                controller = TYPlayerController(urlString: url)
+                controller = TYCompositionController(urlString: url)
             default:
                 controller = TYPlayerController(urlString: url)
             }

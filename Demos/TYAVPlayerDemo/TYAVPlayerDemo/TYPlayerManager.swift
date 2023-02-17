@@ -39,7 +39,9 @@ class TYPlayerManager: NSObject {
                 "playable",
                 "hasProtectedContent"
             ]
-            let asset = AVAsset(url: URL(string: urlString)!)
+//            let asset = AVAsset(url: URL(string: urlString)!)
+            let url = URL(fileURLWithPath: urlString)
+            let asset = AVAsset(url: url)
             currentPlayerItem = AVPlayerItem(asset: asset, automaticallyLoadedAssetKeys: assetKey)
             player = AVPlayer(playerItem: currentPlayerItem)
             playerLayer = AVPlayerLayer(player: player)
@@ -115,7 +117,8 @@ class TYPlayerManager: NSObject {
                 duration = CMTimeGetSeconds((self.player?.currentItem!.duration)!)
             case .failed:
                 //播放失败
-                print("failed")
+                print("播放失败")
+                print(self.player?.currentItem?.error)
             case.unknown:
                 //未知情况
                 print("unkonwn")

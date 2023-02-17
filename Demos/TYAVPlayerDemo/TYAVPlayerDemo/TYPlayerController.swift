@@ -13,8 +13,11 @@ import SnapKit
 class TYPlayerController : UIViewController {
     
     var urlString : String
+    
     private lazy var playView = {
         let playView = TYPlayerView()
+        playView.frame = CGRect(x: 0, y: 100, width: self.view.bounds.width, height: 200)
+        view.addSubview(playView)
         return playView
     }()
     private var playerManager: TYPlayerManager?
@@ -30,35 +33,18 @@ class TYPlayerController : UIViewController {
     
     override func viewDidLoad() {
         setup()
-        setupSubviews()
-        
         playerManager = TYPlayerManager(url: urlString)
-        self.playView.manager = playerManager
-        if let layer = playerManager?.playerLayer {
-            layer.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: 200)
-            playView.layer.insertSublayer(layer, at: 0)
-        }
-        playerManager?.periodicTime(callback: {[weak self]currentTime in
-            let sliderValue = Float(currentTime/self!.playerManager!.duration)
-            self?.playView.updateSliderValue(sliderValue)
+        playView.manager = playerManager
+        playerManager!.periodicTime(callback: {[weak self]currentTime in
+            if let weakSelf = self {
+                let sliderValue = Float(currentTime/weakSelf.playerManager!.duration)
+                weakSelf.playView.updateSliderValue(sliderValue)
+            }
         })
     }
-    
     // 配置控制器
     func setup() {
         title = "AVPlayer Demo";
         view.backgroundColor = .white
     }
-    
-    // 配置子视图
-    func setupSubviews() {
-        view.addSubview(playView)
-        
-        playView.snp.makeConstraints { make in
-            make.left.right.equalTo(view)
-            make.top.equalTo(view).offset(100)
-            make.height.equalTo(200)
-        }
-    }
-    
 }
